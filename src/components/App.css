@@ -1,0 +1,24 @@
+.ring-2 {
+  box-shadow: 0 0 0 2px #4ade80;
+}
+.ring-4 {
+  box-shadow: 0 0 0 4px #a78bfa;
+}
+.bg-green-100\/10 {
+  background-color: rgba(220, 252, 231, 0.1);
+}
+.scale-105 {
+  transform: scale(1.05);
+}
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+.duration-700 {
+  transition-duration: 700ms;
+} 

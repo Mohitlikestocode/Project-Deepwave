@@ -1,0 +1,78 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 10 10 15;
+    --foreground: 192 197 206;
+
+    --card: 26 26 46;
+    --card-foreground: 192 197 206;
+
+    --popover: 26 26 46;
+    --popover-foreground: 192 197 206;
+
+    --primary: 0 255 136;
+    --primary-foreground: 10 10 15;
+
+    --secondary: 0 102 204;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 26 26 46;
+    --muted-foreground: 156 163 175;
+
+    --accent: 108 92 231;
+    --accent-foreground: 255 255 255;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+
+    --border: 55 65 81;
+    --input: 55 65 81;
+    --ring: 0 255 136;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 10 10 15;
+    --sidebar-foreground: 192 197 206;
+    --sidebar-primary: 0 255 136;
+    --sidebar-primary-foreground: 10 10 15;
+    --sidebar-accent: 26 26 46;
+    --sidebar-accent-foreground: 192 197 206;
+    --sidebar-border: 55 65 81;
+    --sidebar-ring: 0 255 136;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cosmic-black text-cosmic-silver font-space;
+  }
+}
+
+@layer components {
+  .cosmic-button {
+    @apply bg-cosmic-green hover:bg-cosmic-green-dark text-cosmic-black font-orbitron font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 animate-pulse-glow;
+  }
+  
+  .space-card {
+    @apply bg-cosmic-black-light border border-cosmic-blue/30 rounded-lg p-6 backdrop-blur-sm;
+  }
+  
+  .neon-text {
+    @apply text-cosmic-green drop-shadow-[0_0_10px_rgba(0,255,136,0.5)];
+  }
+  
+  .space-grid {
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 255, 136, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+}
