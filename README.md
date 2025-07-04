@@ -1,19 +1,24 @@
 # 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀
+[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ## ✨ **Hey Judges! THE TOUR MODE IS ON!**  
 > This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet.  
 > Predicting tsunamis is critical — but *understanding* them? That's what truly saves lives.  
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
 
-**Small note for judges - Our ML model frontend-backend connection is coming in our next Feature Friday!**  
-**🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour Mode" on our website with volume UP! 🚀**  
-**Apart from polishing the website UI to match our hackathon's "Hack-Enshmirtz" theme, we've introduced...**  
+**Small note for judges** - Our ML model frontend-backend connection is coming in our next Feature Friday!
+##**🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour Mode" on our website with volume UP! 🚀**  
 
 [![🎥 Try Tour Mode Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)
 
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
+
+**Along with enhancement of the overall UI/UX to match it with the hack-enshmirtz theme, a 2d Map, more features...
+We've also added automation for the globe - that is
+-> When you click the globe, you can just click generate prediction, and it will AUTO scroll to the prediction arena...where it will auto enter the data...
+-> Now,our ML model frontend-backend connection is coming in our next Feature Friday, but in addition to TOUR mode, we have also added this feature - to increase convinience of an aveage user. Trying to put attention to detail for overall user expereince :))**
 
 ## 🌐 What is DeepWave?
 
