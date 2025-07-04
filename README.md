@@ -1,140 +1,101 @@
 # 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀
 
- #✨ **Hey Judges! THE TOUR MODE IS ON!**  
- 
+## ✨ **Hey Judges! THE TOUR MODE IS ON!**  
 > This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet.  
 > Predicting tsunamis is critical — but *understanding* them? That's what truly saves lives.  
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
 
-**Small note for judges - Our ML model frontend backened connection would be coming in our next Feature Friday..**  
-# 🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour mode" on our website with volume UP ;)🚀
-##Apart from putting efforts on the website UI, to match the theme of our hackathon hack-enshmirtz, making the UI clean, memorable, We have introduced TOUR MODE!!
+**Small note for judges - Our ML model frontend-backend connection is coming in our next Feature Friday!**  
+**🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour Mode" on our website with volume UP! 🚀**  
+**Apart from polishing the website UI to match our hackathon's "Hack-Enshmirtz" theme, we've introduced...**  
 
-## 🎢 🎭 **TOUR MODE — Our Biggest Innovation Yet!**
+[![🎥 Try Tour Mode Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)
 
-We realized our goal isn't just to predict tsunamis — it's to help people really **feel** why they matter.  
-
-**What's Tour Mode?**  
-It’s not just a feature. It’s a *journey*.  
-An *elevator-style adventure* through history’s worst tsunami events, with real images, real stories, and even a quiz to make sure you remember the important stuff.  
-
-🌌 **Highlights:**  
-- Elevator navigation through 6 levels — 5 historic disasters + 1 interactive quiz  
-- Black screen transitions with lines like *“It’s time for a journey”* and *“Welcome to Disaster Alertinator”*  
-- Atmospheric rain sounds and music (yes, even a cheeky Phineas and Ferb-inspired theme in the background 😉)  
-- Fun fact clouds floating by with real tsunami data and AI insights  
-- Designed for *everyone*: kids, families, students, future scientists  
-
-We want a 12-year-old to click this and say:  
-> *“Whoa… this was real?”*  
-
-And then take the quiz, laugh at the options, but remember the right answer *for life*.  
-
-Because someday, this might not just be a school project — it might **save lives**.  
+[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
 
-## 🌐 **What is DeepWave?**
+## 🌐 What is DeepWave?
 
-DeepWave is a web app designed to help researchers, disaster-response teams, or anyone worried about coastal risk **predict tsunamis** more easily and intuitively.  
+**DeepWave** is a web app designed to help researchers, disaster-response teams, and anyone concerned with **predicting tsunami risk at any coastal location**.
 
-We combine:  
-🌍 An **interactive 3D NASA Earth globe** so you can *visually* choose precise locations  
-🧠 A **machine learning model** with 91% accuracy for tsunami prediction  (UPCOMING FEATURE FRIDAY)
-🎢 And now — **TOUR MODE** for immersive awareness and education  
+It combines:
 
-> Our mission: *Making life-saving tools accessible, intuitive, and even a little fun.*  
+- 👉 A **machine learning model** that predicts tsunami likelihood from coordinates  
+- 👉 An **interactive 3D NASA Earth globe** so users can **visually choose precise locations** instead of manually searching for latitude and longitude  
+- 👉 A brand-new immersive **Tour Mode** to educate users about historical tsunami events in a fun, emotional way
 
----
+Our mission:
 
-## 🎥 **Check Out Our Demo!**
-
-👉 **Click the image below to watch our main website video:**  
-## [![Try It TOUR MODE Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv
-
-##Youtube link - https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv
-## [🌊 Official Website](https://project-deepwave-taupe.vercel.app/)
+> **"Making critical geolocation data entry accessible and intuitive — for those moments when precision can save lives."**
 
 ---
 
-## 💡 **Why We Built This**
+## 🌟 About the Site
 
-> *"To predict tsunami risk accurately, you need the exact coastal coordinates. But in an emergency, no one wants to scramble with Google Maps."*  
+DeepWave is built to **predict tsunami risk** using precise geographic coordinates.
 
-We wanted to make it:  
-✨ Easy  
-🌎 Visual  
-🚀 Fast  
-❤️ Human  
+Normally, teams have to manually look up and type latitude and longitude—slow and error-prone, especially during emergencies.
 
-But we didn’t stop there.  
+Our **Interactive Globe** changes that:
 
-We want users to *understand* what these waves have done.  
-To *respect* the tragedies behind the numbers.  
-To *never forget* why early warning systems matter.  
+- 🌍 Spin, zoom, and explore Earth in 3D  
+- 📍 Click *exactly* where you want to analyze  
+- 📏 Instantly see **precise WGS84 coordinates**  
 
-It’s not just tech. It’s *personal*.  
+These coordinates will be **fed into our tsunami prediction ML model** (integration planned), returning risk scores in real-time.
+
+It's not just functional—it's *engaging*, helping users better understand coastal geography and plan proactively.
 
 ---
 
-## 🗺️ **Key Features**
+## 🛸 TOUR MODE — Immersive, Fun, and Unforgettable
 
-- 🌍 **Interactive Globe**  
-  - Spin, zoom, explore Earth in 3D  
-  - Click anywhere to get **precise latitude and longitude**  
-  - NASA’s beautiful 4K satellite textures  
-  - Smooth bounce animation on click  
+The brand-new **Tour Mode** is an elevator-style scroll journey across history’s biggest tsunamis:
 
-- 🎭 **Tour Mode** *(Our Focus!)*  
-  - Elevator-style journey through 5 real tsunami events  
-  - Real images, real impact stories  
-  - Black screen transitions to set the mood  
-  - Atmospheric audio for immersion  
-  - Fun Fact clouds and a cheeky, educational quiz  
+- 🚟 6 Levels: 5 iconic tsunami disasters + a fun interactive quiz
+- ⛱️ Real images, emotional context, floating fun fact clouds
+- 😍 Audio effects, black screen transitions, rain sounds, and atmospheric music
+- 🎮 A dramatic quiz section ("What’s the best way to survive a tsunami?") to reinforce safety + make it fun
+- 🚀 Memorable moments designed for **kids, families, future scientists** and all curious minds
 
-- 🎯 **AI Tsunami Prediction** *(Model integration coming in next Feature Friday!)*  
-  - Currently 91% accuracy  
-  - Coordinates from globe will feed straight into prediction  
+> "We want a 12-year-old to scroll through and say: *'Whoa... this was real?'*"
+
+Tour Mode is more than a feature—it's a tribute, a lesson, and an experience.
 
 ---
 
-## 📚 **Educating Through Experience**
+## 🌿 Educating Through Real Events
 
-We want DeepWave to do more than predict.  
-We want it to *teach*.  
+We also use DeepWave to teach people about **real tsunami disasters**. 
 
-When you explore Tour Mode:  
-🌊 You see the human cost.  
-📖 You read real stories.  
-🎶 You hear the rain and music that set the tone.  
-❓ You take the quiz and (hopefully) remember the right answer forever.  
+- 🔹 1960 Chilean Earthquake (M9.5)  
+- 🔹 2004 Indian Ocean Tsunami  
+- 🔹 2011 Tōhoku, Japan  
+- 🔹 1755 Lisbon, Portugal  
+- 🔹 1883 Krakatoa eruption  
 
-> “Because someday, that answer might save someone’s village.”  
+> These aren't just events. They're *why* we build this.
 
----
-
-## ⚡ **Special Notes for Hackathon Reviewers**
-
-We’re so grateful that our **Interactive NASA Globe** won a previous Feature Friday!  
-
-This time, we wanted to bring *that level of creativity* to the **whole experience**.  
-
-✨ TOUR MODE is the heart of this update.  
-We hope you’ll explore it, hear the sound, see the images, take the quiz, and understand why it matters to us so much.  
-
-✅ Next Feature Friday: **Full ML model integration into frontend** — click the globe, see the risk instantly.  
+By learning from the past, we build tools that might protect the future.
 
 ---
 
-## 🚀 **Quick Start**
+## 📈 AI Model & Future Integration
 
-Use your favorite IDE and follow these steps:
+- ⏳ ML backend model has **91% accuracy**  
+- 📊 Inputs: latitude, longitude, magnitude, depth
+- 🌐 Currently under **integration with frontend** — will go live in the next Feature Friday!
+
+---
+
+## 🚀 Quick Start
 
 ```bash
 # 1️⃣ Clone this repo
 git clone <YOUR_GIT_URL>
 
-# 2️⃣ Navigate to the project folder
+# 2️⃣ Go to the project folder
 cd wavefront
 
 # 3️⃣ Install dependencies
@@ -142,3 +103,62 @@ npm install
 
 # 4️⃣ Start the development server
 npm run dev
+```
+
+---
+
+## 🌍 Core Features
+
+- 👉 Interactive 3D Earth using NASA imagery
+- 👉 Click to get precise latitude and longitude (WGS84)
+- 👉 Smooth bounce animation centered on click location
+- 👉 Real-time coordinate display
+- 👉 Mobile-friendly & responsive
+
+---
+
+## 🌌 Why This Globe is Special
+
+- Uses NASA 4K Blue Marble textures for realism
+- Handles 3D-to-geographic projection and rotation
+- Click mapping using inverse rotation matrices
+- Custom sinusoidal bounce animations (no prebuilt libs!)
+
+---
+
+## ✨ Highlights of Implementation
+
+- 🔹 Diffuse / Normal / Specular textures
+- 🔹 Realistic lighting, shadows, and animation flow
+- 🔹 Click-based coordinate projection math
+- 🔹 Tour Mode elevator with scroll-driven motion
+- 🔹 Quiz logic with score and retry options
+
+---
+
+## 🛍️ Example Use Flow
+
+1. User explores globe
+2. Clicks target location
+3. Gets coordinates instantly
+4. (Next version) Model auto-generates risk scores
+
+---
+
+## 📊 Tech Stack
+
+- ✨ Vite
+- ⚡️ React
+- 📃 TypeScript
+- 🎨 Tailwind CSS
+- 🌟 shadcn/ui
+- 🌌 Three.js
+
+---
+
+## ✨ Final Note
+
+> "Yes, we're using AI to predict the future... but we're also honoring the past to protect what matters most."
+
+Please do visit our Tour Mode. Volume up. 
+Let the Disaster Alertinator take you on a journey. 🚗💜
