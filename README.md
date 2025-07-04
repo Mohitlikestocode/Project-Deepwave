@@ -26,8 +26,9 @@ Tour Mode is a **scroll-driven elevator journey** through history’s most devas
 
 It’s designed to **educate**, **move**, and **stick** in the mind—because awareness is what saves lives.
 
-🎥 [**Watch Tour Mode Demo**](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)  
-🌐 [**Try Tour Mode Live on Our Site**](https://project-deepwave-taupe.vercel.app/)
+[![🎥 Try Tour Mode Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)
+
+[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
 
