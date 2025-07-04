@@ -7,7 +7,7 @@
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
 
 **Small note for judges - Our ML model frontend backened connection would be coming in our next Feature Friday..**  
-# 🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY Tour mode 🌊 on our website with volume UP ;)🚀
+# 🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour mode" 🌊 on our website with volume UP ;)🚀
 ##Apart from putting efforts on the website UI, to match the theme of our hackathon hack-enshmirtz, making the UI clean, memorable, We have introduced TOUR MODE!!
 
 ## 🎢 🎭 **TOUR MODE — Our Biggest Innovation Yet!**
@@ -49,12 +49,12 @@ We combine:
 
 ## 🎥 **Check Out Our Demo!**
 
-👉 **Click the image below to watch our video:**  
+👉 **Click the image below to watch our main website video:**  
 [![Watch the demo](https://github.com/user-attachments/assets/9e1c9ab7-6898-435c-9586-94dcd2d22803)](https://youtu.be/ak2QTYkNcWU)
 
 ---
 
-## 🔗 **Try It Live**
+## 🔗 **Try It TOUR MODE Live**
 
 🌊 [https://project-deepwave.vercel.app/](https://project-deepwave.vercel.app/)
 
