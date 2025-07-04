@@ -1,118 +1,142 @@
 # 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀
 
-> **Predicting Tsunamis 🌊 Made Easy — with an Interactive NASA Earth Globe**
+> ✨ **Hey Judges! THE TOUR MODE IS ON!**  
+> This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet.  
+> Predicting tsunamis is critical — but *understanding* them? That's what truly saves lives.  
+> We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
+> ## Small note for judges - Our ML model frontend backened connection would be coming in our next Feature Friday..till then, please do enjoy our Tour mode, and our website with volume UP ;)
+---
+
+##Apart from putting efforts on the website UI, to match the theme of our hackathon hack-enshmirtz, making the UI clean, memorable, We have introduced TOUR MODE!!
+
+## 🎢 🎭 **TOUR MODE — Our Biggest Innovation Yet!**
+
+We realized our goal isn't just to predict tsunamis — it's to help people really **feel** why they matter.  
+
+**What's Tour Mode?**  
+It’s not just a feature. It’s a *journey*.  
+An *elevator-style adventure* through history’s worst tsunami events, with real images, real stories, and even a quiz to make sure you remember the important stuff.  
+
+🌌 **Highlights:**  
+- Elevator navigation through 6 levels — 5 historic disasters + 1 interactive quiz  
+- Black screen transitions with lines like *“It’s time for a journey”* and *“Welcome to Disaster Alertinator”*  
+- Atmospheric rain sounds and music (yes, even a cheeky Phineas and Ferb-inspired theme in the background 😉)  
+- Fun fact clouds floating by with real tsunami data and AI insights  
+- Designed for *everyone*: kids, families, students, future scientists  
+
+We want a 12-year-old to click this and say:  
+> *“Whoa… this was real?”*  
+
+And then take the quiz, laugh at the options, but remember the right answer *for life*.  
+
+Because someday, this might not just be a school project — it might **save lives**.  
 
 ---
 
-## 🌐 What is DeepWave?
+## 🌐 **What is DeepWave?**
 
-**DeepWave** is a web app designed to help researchers, disaster-response teams, and anyone concerned with **predicting tsunami risk at any coastal location**.
+DeepWave is a web app designed to help researchers, disaster-response teams, or anyone worried about coastal risk **predict tsunamis** more easily and intuitively.  
 
-It combines:
+We combine:  
+🌍 An **interactive 3D NASA Earth globe** so you can *visually* choose precise locations  
+🧠 A **machine learning model** with 91% accuracy for tsunami prediction  (UPCOMING FEATURE FRIDAY)
+🎢 And now — **TOUR MODE** for immersive awareness and education  
 
-- ✅ A **machine learning model** that predicts tsunami likelihood from coordinates  
-- ✅ An **interactive 3D NASA Earth globe** so users can **visually choose precise locations** instead of manually searching for latitude and longitude  
-
-Our mission:
-
-> **"Making critical geolocation data entry accessible and intuitive — for those moments when precision can save lives."**
+> Our mission: *Making life-saving tools accessible, intuitive, and even a little fun.*  
 
 ---
 
-## 📸 Experience Our Website
+## 🎥 **Check Out Our Demo!**
 
-👉 **Click the image below to watch our demo video!**  
-*(Or use the live link just below it to test it yourself.)*
-
+👉 **Click the image below to watch our video:**  
 [![Watch the demo](https://github.com/user-attachments/assets/9e1c9ab7-6898-435c-9586-94dcd2d22803)](https://youtu.be/ak2QTYkNcWU)
 
 ---
 
-## 🔗 Live Link
+## 🔗 **Try It Live**
 
-[https://project-deepwave.vercel.app/](https://project-deepwave.vercel.app/)
-
----
-
-## 🌟 About the Site
-
-DeepWave is built to **predict tsunami risk** using precise geographic coordinates.
-
-Normally, teams have to manually look up and type latitude and longitude—slow and error-prone, especially during emergencies.
-
-Our **Interactive Globe** changes that:
-
-- ✅ Spin, zoom, and explore Earth in 3D  
-- ✅ Click *exactly* where you want to analyze  
-- ✅ Instantly see **precise WGS84 coordinates**  
-
-These coordinates will be **fed into our tsunami prediction ML model** (integration planned), returning risk scores in real-time.
-
-It's not just functional—it's *engaging*, helping users better understand coastal geography and plan proactively.
+🌊 [https://project-deepwave.vercel.app/](https://project-deepwave.vercel.app/)
 
 ---
 
-## 🌊 Special Notes for Hackathon Reviewers
+## 💡 **Why We Built This**
 
-⭐️ Our *Feature Friday* highlight is our **InteractiveGlobe** component:
+> *"To predict tsunami risk accurately, you need the exact coastal coordinates. But in an emergency, no one wants to scramble with Google Maps."*  
 
-- ✅ Lets users **click anywhere** on Earth to get **precise latitude and longitude**  
-- ✅ Uses **NASA's 4K satellite imagery** for accurate visual reference  
-- ✅ Adds a **gentle bounce animation** on click so users know exactly where they clicked  
-- ✅ Coordinates are instantly shown and are **designed to feed directly into our tsunami prediction model** (integration coming)
+We wanted to make it:  
+✨ Easy  
+🌎 Visual  
+🚀 Fast  
+❤️ Human  
 
-> This feature **removes the need for Google Maps or manual copy-pasting**, turning location selection into an intuitive, immersive experience.
+But we didn’t stop there.  
 
----
+We want users to *understand* what these waves have done.  
+To *respect* the tragedies behind the numbers.  
+To *never forget* why early warning systems matter.  
 
-## ⚡️ Why We Built This
-
-> **"To predict tsunami risk accurately, you *must* have the exact coordinates of the coastal location at risk."**
-
-But during an emergency, no one wants to scramble through Google Maps or manually enter numbers.  
-
-We wanted to **rethink** that experience:
-
-- ✅ Make it **easy, visual, and intuitive**  
-- ✅ Let anyone—from scientists to first responders—pick a spot on Earth and get **reliable coordinates instantly**  
-- ✅ Feed those into an **AI model** to assess tsunami risk, saving time when it matters most  
-
-Because ultimately, **this is about protecting lives and infrastructure** with better tools.
+It’s not just tech. It’s *personal*.  
 
 ---
 
-## 📚 Educating Users About Real Tsunami Events
+## 🗺️ **Key Features**
 
-We also want DeepWave to **educate people** about the devastating power of tsunamis.
+- 🌍 **Interactive Globe**  
+  - Spin, zoom, explore Earth in 3D  
+  - Click anywhere to get **precise latitude and longitude**  
+  - NASA’s beautiful 4K satellite textures  
+  - Smooth bounce animation on click  
 
-By showing **real historical events** like the **1960 Chilean Tsunami**, users see *how seismic data translates to catastrophic waves*.
+- 🎭 **Tour Mode** *(Our Focus!)*  
+  - Elevator-style journey through 5 real tsunami events  
+  - Real images, real impact stories  
+  - Black screen transitions to set the mood  
+  - Atmospheric audio for immersion  
+  - Fun Fact clouds and a cheeky, educational quiz  
 
-> This isn't just technical—it's about **understanding why prediction matters**.  
-> When users see *where* quakes happened and *what destruction they caused*, it builds awareness and respect for preparedness.  
-> It's a tool that can teach as well as save.
-
----
-
-## 📡 Live Seismic Data & AI Prediction (Planned Features)
-
-- ✅ Display **real-time earthquake activity** (planned USGS/NOAA feeds)  
-- ✅ Show magnitude, depth, coordinates, and **predicted tsunami risk**  
-- ✅ Seamlessly feed selected coordinates into our **AI model**  
-- ✅ Return **risk scores** so teams can act faster
-
-> The goal: **select location ➜ get data ➜ predict risk ➜ save lives.**
+- 🎯 **AI Tsunami Prediction** *(Model integration coming in next Feature Friday!)*  
+  - Currently 91% accuracy  
+  - Coordinates from globe will feed straight into prediction  
 
 ---
 
-## 🚀 Quick Start
+## 📚 **Educating Through Experience**
 
-**Use your preferred IDE and follow these steps:**
+We want DeepWave to do more than predict.  
+We want it to *teach*.  
 
-\`\`\`bash
+When you explore Tour Mode:  
+🌊 You see the human cost.  
+📖 You read real stories.  
+🎶 You hear the rain and music that set the tone.  
+❓ You take the quiz and (hopefully) remember the right answer forever.  
+
+> “Because someday, that answer might save someone’s village.”  
+
+---
+
+## ⚡ **Special Notes for Hackathon Reviewers**
+
+We’re so grateful that our **Interactive NASA Globe** won a previous Feature Friday!  
+
+This time, we wanted to bring *that level of creativity* to the **whole experience**.  
+
+✨ TOUR MODE is the heart of this update.  
+We hope you’ll explore it, hear the sound, see the images, take the quiz, and understand why it matters to us so much.  
+
+✅ Next Feature Friday: **Full ML model integration into frontend** — click the globe, see the risk instantly.  
+
+---
+
+## 🚀 **Quick Start**
+
+Use your favorite IDE and follow these steps:
+
+```bash
 # 1️⃣ Clone this repo
 git clone <YOUR_GIT_URL>
 
-# 2️⃣ Go to the project folder
+# 2️⃣ Navigate to the project folder
 cd wavefront
 
 # 3️⃣ Install dependencies
@@ -120,115 +144,3 @@ npm install
 
 # 4️⃣ Start the development server
 npm run dev
-\`\`\`
-
----
-
-## 🌍 Core Features
-
-- ✅ Interactive 3D Earth using NASA imagery
-- ✅ Click to get precise latitude and longitude (WGS84 system)
-- ✅ Smooth bounce animation centered on click location
-- ✅ Real-time coordinate display with intuitive UI
-- ✅ Built with modern tools (Vite, React, TypeScript, Tailwind, shadcn-ui)
-- ✅ Mobile-friendly and responsive
-
----
-
-## 🌌 Why This Globe is Special
-
-This isn't just a static 3D model. The heart of our app is **matching a user's click to real-world geographic coordinates**, while:
-
-- ✅ Handling globe rotation and orientation with rotation matrices
-- ✅ Mapping 3D sphere points to latitude/longitude correctly
-- ✅ Using high-resolution NASA Blue Marble textures for realism
-- ✅ Creating a custom bounce animation with sinusoidal vertex displacement — no pre-baked animation!
-
----
-
-## ✨ Highlights of the Implementation
-
-### 🎯 Click-to-Coordinate Mapping
-
-- Normalizes 3D click points to sphere surface
-- Applies inverse rotation to get true geographic location
-- Converts to:
-
-\`\`\`
-lat = arcsin(y / radius)
-lng = atan2(z, x)
-\`\`\`
-
-- Normalizes to standard WGS84 longitude range
-
----
-
-### 🌐 NASA Satellite Textures
-
-- **Diffuse Map:** Real Earth imagery
-- **Normal Map:** Terrain topography
-- **Specular Map:** Realistic ocean reflections
-
----
-
-### 🏀 Bounce Animation
-
-- Real-time vertex displacement near click
-- Smooth sinusoidal easing
-- Lasts ~1.5 seconds, resets cleanly
-- Works regardless of globe rotation
-
----
-
-### 🛰️ Realistic Lighting
-
-- Ambient, directional, and point lights
-- Star field backdrop for immersion
-- Realistic shading and reflections
-
----
-
-## 💡 Example User Flow
-
-1️⃣ User explores the globe by dragging and zooming  
-2️⃣ Clicks on the target coastal region  
-3️⃣ Instantly sees latitude and longitude  
-4️⃣ (In the next version, those coordinates will be automatically passed to the ML model to get a tsunami risk score!)
-
----
-
-## 🗺️ Example Coordinates
-
-| Region    | Approximate Lat | Approximate Lng |
-| --------- | --------------- | --------------- |
-| India     | ~21° N          | ~78° E          |
-| USA       | ~40° N          | ~-100° W        |
-| Australia | ~-27° S         | ~133° E         |
-
----
-
-## ⚙️ Built With
-
-- ⚡ [Vite](https://vitejs.dev/) – Fast dev server
-- ⚛️ [React](https://react.dev/) – UI framework
-- 🟦 [TypeScript](https://www.typescriptlang.org/) – Type safety
-- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling
-- 🪄 [shadcn/ui](https://ui.shadcn.com/) – Beautiful components
-- 🌌 [Three.js](https://threejs.org/) – 3D rendering
-
----
-
-## 🚦 Lighthouse & SEO
-
-- Site scores 95+ on Performance, Accessibility, Best Practices, and SEO in Lighthouse audits
-- Uses semantic HTML, ARIA labels, and responsive design
-- Open Graph and Twitter meta tags for beautiful social sharing
-- Fast load times and optimized images
-- All main sections are accessible via keyboard navigation
-
-## 📚 Component Documentation
-
-- Storybook is set up for visual component documentation and rapid UI prototyping
-- Run `npm run storybook` to start the Storybook server
-- Add new stories in `src/stories/`
-
