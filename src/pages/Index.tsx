@@ -327,29 +327,24 @@ const Index = () => {
               <span className="text-cosmic-green font-bold block mt-4">That's why the world of Hackensmitz needs a breakthrough:<br/>A smart AI tsunami predictor.</span>
               <span className="block mt-4 text-cosmic-blue/80">Harnessing data, history, and cutting-edge AI, we're building a future where early warning saves lives.</span>
             </p>
-            <button
-              className="cosmic-button px-8 py-3 text-lg font-orbitron font-bold shadow-lg hover:scale-105 transition-transform"
-              onClick={() => {
-                const globe = document.getElementById('globe');
-                if (globe) globe.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Return to Globe
-            </button>
-          </div>
-        </section>
-        <section id="testimonials" data-aos="fade-up">
-          <div className="py-20 px-4 max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-orbitron font-bold neon-text mb-6 text-cosmic-green drop-shadow-lg">What People Say</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-cosmic-black-light border border-cosmic-green/30 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform duration-300">
-                <p className="text-cosmic-silver font-space text-lg mb-4">“DeepWave's early warning gave us precious minutes to evacuate. It saved lives in our village.”</p>
-                <div className="flex items-center justify-center gap-2 text-cosmic-green font-orbitron"><span>🌊</span> Coastal Resident</div>
-              </div>
-              <div className="bg-cosmic-black-light border border-cosmic-blue/30 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform duration-300">
-                <p className="text-cosmic-silver font-space text-lg mb-4">“The science behind DeepWave is world-class. It's a game-changer for disaster response.”</p>
-                <div className="flex items-center justify-center gap-2 text-cosmic-blue font-orbitron"><span>🛰️</span> Seismologist</div>
-              </div>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+              <button
+                className="cosmic-button px-8 py-3 text-lg font-orbitron font-bold shadow-lg hover:scale-105 transition-transform"
+                onClick={() => {
+                  const globe = document.getElementById('globe');
+                  if (globe) globe.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Return to Globe
+              </button>
+              <a
+                href="/tour"
+                className="cosmic-button px-8 py-3 text-lg font-orbitron font-bold shadow-lg border-2 border-cosmic-green text-cosmic-green bg-cosmic-black-light hover:bg-cosmic-green/10 transition-transform hover:scale-105"
+                style={{ letterSpacing: '0.1em', boxShadow: '0 0 12px 2px #a259e6' }}
+                aria-label="Tour Mode"
+              >
+                🌊 Tour Mode
+              </a>
             </div>
           </div>
         </section>
@@ -374,36 +369,6 @@ const Index = () => {
                 <p className="text-cosmic-silver">Our deep learning model analyzes seismic signals, ocean data, and historical events to predict tsunami risk in real time.</p>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="how-ai-works" data-aos="fade-up">
-          <div className="py-20 px-4 max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-orbitron font-bold neon-text mb-6 text-cosmic-purple drop-shadow-lg">How the AI Works</h2>
-            <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-              <div className="flex-1">
-                <ul className="list-disc list-inside text-cosmic-silver text-left mx-auto max-w-md space-y-2">
-                  <li>Analyzes seismic waveforms and ocean sensor data in real time</li>
-                  <li>Uses deep neural networks trained on 2.3M+ historical events</li>
-                  <li>Simulates wave propagation and coastal impact</li>
-                  <li>Continuously improves with new data</li>
-                </ul>
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img src="/public/ai-diagram.svg" alt="AI Model Diagram" className="w-64 h-64 object-contain" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="data-sources" data-aos="fade-up">
-          <div className="py-12 px-4 max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-orbitron font-bold neon-text mb-4 text-cosmic-blue">Data Sources</h2>
-            <p className="text-cosmic-silver font-space text-lg">Seismic data from <a href="https://earthquake.usgs.gov/" className="text-cosmic-green underline" target="_blank" rel="noopener noreferrer">USGS</a>, <a href="https://www.emsc-csem.org/" className="text-cosmic-green underline" target="_blank" rel="noopener noreferrer">EMSC</a>, and <a href="https://www.nasa.gov/" className="text-cosmic-green underline" target="_blank" rel="noopener noreferrer">NASA</a> satellites. Ocean sensor data from our own network.</p>
-          </div>
-        </section>
-        <section id="stories-facts" data-aos="fade-up">
-          <div className="py-20 px-4 max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-orbitron font-bold neon-text mb-10 text-cosmic-green drop-shadow-lg">What People Say & Cool Facts</h2>
-            <StoriesFactsCarousel />
           </div>
         </section>
         <section id="footer" data-aos="fade-up"><Footer /></section>

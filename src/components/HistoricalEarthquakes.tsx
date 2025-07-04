@@ -177,15 +177,15 @@ const HistoricalEarthquakes = () => {
                     >
                       Previous
                     </Button>
-                    
-                    <Button
-                      onClick={() => setIsAutoPlay(!isAutoPlay)}
-                      variant="outline"
-                      size="sm"
-                      className="border-cosmic-green text-cosmic-green hover:bg-cosmic-green hover:text-cosmic-black"
-                    >
-                      {isAutoPlay ? 'Pause' : 'Play'}
-                    </Button>
+
+                  <Button
+                    onClick={() => setIsAutoPlay(!isAutoPlay)}
+                    variant="outline"
+                    size="sm"
+                    className="border-cosmic-green text-cosmic-green hover:bg-cosmic-green hover:text-cosmic-black"
+                  >
+                    {isAutoPlay ? 'Pause' : 'Play'}
+                  </Button>
                     
                     <Button
                       onClick={() => {

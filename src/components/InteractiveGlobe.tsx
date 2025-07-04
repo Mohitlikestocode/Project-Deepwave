@@ -308,36 +308,36 @@ const InteractiveGlobe = () => {
             </div>
           )}
 
-          {selectedCoords && (
+{selectedCoords && (
             <div className="absolute top-6 right-6 bg-black/90 backdrop-blur-md border border-blue-400/40 rounded-lg p-6 min-w-[280px] shadow-2xl transition-all duration-500" aria-label="Selected Location Panel">
               <h3 className="text-blue-400 text-xl font-bold mb-4 flex items-center gap-2 font-orbitron">
                 <MapPin className="w-5 h-5 text-blue-400" /> Selected Location
-              </h3>
+    </h3>
               <div className="space-y-3 font-space">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Latitude:</span>
-                  <span className="font-mono text-green-400 bg-green-400/10 px-2 py-1 rounded">
-                    {selectedCoords.lat.toFixed(6)}°
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Longitude:</span>
-                  <span className="font-mono text-green-400 bg-green-400/10 px-2 py-1 rounded">
-                    {selectedCoords.lng.toFixed(6)}°
-                  </span>
-                </div>
+      <div className="flex justify-between items-center">
+        <span className="text-gray-300">Latitude:</span>
+        <span className="font-mono text-green-400 bg-green-400/10 px-2 py-1 rounded">
+          {selectedCoords.lat.toFixed(6)}°
+        </span>
+      </div>
+      <div className="flex justify-between items-center">
+        <span className="text-gray-300">Longitude:</span>
+        <span className="font-mono text-green-400 bg-green-400/10 px-2 py-1 rounded">
+          {selectedCoords.lng.toFixed(6)}°
+        </span>
+      </div>
                 <div className="pt-2 border-t border-gray-600 flex items-center gap-2">
                   <Info className="w-4 h-4 text-blue-400" aria-label="Coordinate System Info" />
-                  <div className="text-xs text-gray-400 mb-2">Coordinate System: WGS84</div>
-                </div>
+        <div className="text-xs text-gray-400 mb-2">Coordinate System: WGS84</div>
+        </div>
                 <div className="text-xs text-green-300 flex items-center gap-1">
                   <Globe className="w-4 h-4 text-green-300" /> Geographic coordinates ready
-                </div>
-              </div>
-              <button
+      </div>
+    </div>
+    <button
                 className="mt-4 w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 font-semibold flex items-center justify-center gap-2"
                 aria-label="Generate Prediction"
-                onClick={() => {
+      onClick={() => {
                   // Set lat/lng in URL params
                   const url = new URL(window.location.href);
                   url.searchParams.set('lat', selectedCoords.lat.toFixed(4));
@@ -348,12 +348,12 @@ const InteractiveGlobe = () => {
                   if (predictionSection) {
                     predictionSection.scrollIntoView({ behavior: 'smooth' });
                   }
-                }}
-              >
+      }}
+    >
                 <HelpCircle className="w-5 h-5 text-white" /> 🔮 Generate Prediction
-              </button>
-            </div>
-          )}
+    </button>
+  </div>
+)}
 
           <div className="absolute bottom-6 left-6 bg-black/90 backdrop-blur-md border border-blue-400/40 rounded-lg p-4 max-w-xs shadow-2xl transition-all duration-500" aria-label="Globe Controls">
             <div className="text-blue-400 font-bold text-sm mb-3 flex items-center gap-2 font-orbitron">

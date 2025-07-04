@@ -50,10 +50,10 @@ const PredictionForm = () => {
   // Listen for coordinate updates from URL params or other sources
   useEffect(() => {
     const updateCoordsFromUrl = () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const lat = urlParams.get('lat');
-      const lng = urlParams.get('lng');
-      if (lat && lng) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lat = urlParams.get('lat');
+    const lng = urlParams.get('lng');
+    if (lat && lng) {
         const newLat = parseFloat(lat).toFixed(4);
         const newLng = parseFloat(lng).toFixed(4);
         setFormData(prev => {
@@ -73,7 +73,7 @@ const PredictionForm = () => {
             }
           }, 800);
           return {
-            ...prev,
+        ...prev,
             latitude: newLat,
             longitude: newLng,
             datetime: formatted
@@ -354,7 +354,7 @@ const PredictionForm = () => {
                   <Locate className="w-4 h-4" /> Use My Location
                 </button>
               </div>
-
+              
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="magnitude" className="text-cosmic-silver font-space flex items-center gap-1">
@@ -409,13 +409,13 @@ const PredictionForm = () => {
               </div>
 
               <div className="flex gap-3">
-                <Button
-                  type="submit"
-                  disabled={isLoading}
+              <Button
+                type="submit"
+                disabled={isLoading}
                   className={`w-full cosmic-button transition-all duration-300 ${highlightLatLng ? 'ring-4 ring-purple-400 scale-105' : ''}`}
-                >
+              >
                   {isLoading ? <span className="flex items-center justify-center"><svg className="animate-spin h-5 w-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>Analyzing Seismic Data...</span> : "Generate Prediction"}
-                </Button>
+              </Button>
                 <Button type="button" variant="outline" className="flex items-center gap-2" onClick={handleReset}><RefreshCw className="w-4 h-4" />Reset</Button>
                 <Button type="button" variant="outline" className="flex items-center gap-2" onClick={handleShare}><Share2 className="w-4 h-4" />Share</Button>
                 <Button type="button" variant="outline" className="flex items-center gap-2" onClick={() => setShowHistory(true)}><History className="w-4 h-4" />History</Button>
@@ -433,63 +433,63 @@ const PredictionForm = () => {
           </CardHeader>
           <CardContent>
             <div className="transition-all duration-700" style={{ opacity: prediction ? 1 : 0.7, transform: prediction ? 'scale(1)' : 'scale(0.98)' }}>
-              {prediction ? (
-                <div className="space-y-6">
-                  <div className="text-center">
+            {prediction ? (
+              <div className="space-y-6">
+                <div className="text-center">
                     <div className={`text-6xl font-orbitron font-bold mb-2 flex items-center justify-center gap-2 ${getRiskColor(prediction.riskLevel)}`}>
                       {prediction.riskLevel === 'LOW' && <Shield className="text-cosmic-green" />} 
                       {prediction.riskLevel === 'MEDIUM' && <AlertTriangle className="text-yellow-400" />} 
                       {prediction.riskLevel === 'HIGH' && <Flame className="text-orange-400" />} 
                       {prediction.riskLevel === 'EXTREME' && <Zap className="text-red-400" />} 
-                      {prediction.riskLevel}
-                    </div>
-                    <div className="text-cosmic-silver font-space">Risk Level</div>
+                    {prediction.riskLevel}
                   </div>
+                  <div className="text-cosmic-silver font-space">Risk Level</div>
+                </div>
 
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center p-4 bg-cosmic-black rounded-lg">
-                      <div className="text-2xl font-orbitron text-cosmic-green">
-                        {prediction.probability}%
-                      </div>
-                      <div className="text-sm text-cosmic-silver">Probability</div>
-                    </div>
-                    <div className="text-center p-4 bg-cosmic-black rounded-lg">
-                      <div className="text-2xl font-orbitron text-cosmic-blue">
-                        {prediction.waveHeight}m
-                      </div>
-                      <div className="text-sm text-cosmic-silver">Wave Height</div>
-                    </div>
-                  </div>
-
+                <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-cosmic-black rounded-lg">
-                    <div className="text-2xl font-orbitron text-cosmic-purple">
-                      {prediction.arrivalTime} min
+                    <div className="text-2xl font-orbitron text-cosmic-green">
+                      {prediction.probability}%
                     </div>
-                    <div className="text-sm text-cosmic-silver">Estimated Arrival Time</div>
+                    <div className="text-sm text-cosmic-silver">Probability</div>
                   </div>
-
-                  <div className="relative h-24 bg-cosmic-black rounded-lg overflow-hidden">
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cosmic-blue to-cosmic-blue/30 animate-wave-animation"
-                         style={{ height: `${Math.min(prediction.waveHeight * 10, 100)}%` }}>
+                  <div className="text-center p-4 bg-cosmic-black rounded-lg">
+                    <div className="text-2xl font-orbitron text-cosmic-blue">
+                      {prediction.waveHeight}m
                     </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-cosmic-silver font-space font-medium">
-                        Wave Simulation
-                      </span>
-                    </div>
+                    <div className="text-sm text-cosmic-silver">Wave Height</div>
                   </div>
                 </div>
-              ) : (
-                <div className="text-center py-12">
+
+                <div className="text-center p-4 bg-cosmic-black rounded-lg">
+                  <div className="text-2xl font-orbitron text-cosmic-purple">
+                    {prediction.arrivalTime} min
+                  </div>
+                  <div className="text-sm text-cosmic-silver">Estimated Arrival Time</div>
+                </div>
+
+                <div className="relative h-24 bg-cosmic-black rounded-lg overflow-hidden">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cosmic-blue to-cosmic-blue/30 animate-wave-animation"
+                       style={{ height: `${Math.min(prediction.waveHeight * 10, 100)}%` }}>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-cosmic-silver font-space font-medium">
+                      Wave Simulation
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="text-center py-12">
                   <div className="text-cosmic-silver font-space text-lg mb-4 flex items-center justify-center gap-2">
                     <Info className="w-5 h-5 text-cosmic-blue" />
-                    Enter seismic parameters to generate tsunami risk prediction
-                  </div>
-                  <div className="text-cosmic-green/60 font-mono text-sm">
-                    AI Model Ready • Satellite Data Connected
-                  </div>
+                  Enter seismic parameters to generate tsunami risk prediction
                 </div>
-              )}
+                <div className="text-cosmic-green/60 font-mono text-sm">
+                  AI Model Ready • Satellite Data Connected
+                </div>
+              </div>
+            )}
             </div>
           </CardContent>
         </Card>

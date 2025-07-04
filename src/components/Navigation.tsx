@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Satellite, Home, BarChart2, HelpCircle, Activity, Zap, List, Globe } from 'lucide-react';
 
 const mainNavItems = [
@@ -23,6 +23,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("hero");
   const [showMore, setShowMore] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,6 +101,14 @@ const Navigation = () => {
                 </div>
               )}
             </div>
+            <Link
+              to="/tour"
+              className={`tour-nav-btn px-4 py-2 rounded-full font-bold border-2 border-cosmic-green text-cosmic-green bg-cosmic-black-light shadow-lg hover:bg-cosmic-green/10 transition-all duration-300${location.pathname === "/tour" ? " active ring-4 ring-cosmic-green/30" : ""}`}
+              aria-label="Tour Mode"
+              style={{ letterSpacing: "0.1em", boxShadow: '0 0 12px 2px #a259e6' }}
+            >
+              🌊 Tour Mode
+            </Link>
           </div>
           <div className="md:hidden">
             <button

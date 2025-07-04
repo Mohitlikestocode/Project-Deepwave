@@ -31,8 +31,8 @@ const HeroSection = () => {
         <div className="mb-8">
           <h1 className="text-5xl md:text-6xl font-orbitron font-bold neon-text mb-4 flex items-center justify-center gap-2" aria-label="Project DeepWave Hero">
             <Globe className="w-10 h-10 text-cosmic-green animate-pulse-glow" />
-            Project DeepWave
-          </h1>
+          Project DeepWave
+        </h1>
           <p className="text-cosmic-silver font-space text-lg md:text-xl mb-6">AI-powered tsunami risk prediction using real-time satellite data and seismic analysis.</p>
           <button
             className="inline-block bg-cosmic-green hover:bg-cosmic-green-dark text-cosmic-black font-orbitron font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 animate-pulse-glow text-lg"
