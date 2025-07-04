@@ -11,24 +11,25 @@ We've designed it to **teach**, **inspire**, and *raise awareness* about tsunami
 
 When you visit our site, please **start with Tour Mode (volume up!)**. It’s not just a feature—it’s an experience designed to make you *feel* the stories of real disasters.
 
+[![🎥 Try Tour Mode Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)
+
+[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
+
 ---
 
-## 🛸 🌟 **FOCUS FEATURE: TOUR MODE** — Immersive, Fun, and Unforgettable
+## 🛸 🌟 **FEATURE FRIDAY: TOUR MODE** — Immersive, Fun, and Unforgettable
 
 Tour Mode is a **scroll-driven elevator journey** through history’s most devastating tsunamis:
 
 - 🚟 6 Levels: 5 real historical tsunami disasters + an interactive safety quiz
 - 🖼️ Real images, dramatic transitions, floating fact clouds
-- 🎶 Audio: thunderstorm, rain sounds, immersive music
-- 🧠 A quiz to reinforce safety knowledge in a **fun** way
+- 🎶 Audio: Familiar music ;) It's perry the platypus music :))
+- 🧠 A quiz to reinforce safety knowledge in a **fun** way. It makes the whole experience Interactive, fun and memorable :P
 
 > “We want a 12-year-old to scroll through and say: *‘Whoa… this was real?’*”
 
 It’s designed to **educate**, **move**, and **stick** in the mind—because awareness is what saves lives.
 
-[![🎥 Try Tour Mode Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)
-
-[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
 
