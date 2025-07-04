@@ -7,7 +7,7 @@
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
 
 **Small note for judges - Our ML model frontend backened connection would be coming in our next Feature Friday..**  
-# 🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour mode" 🌊 on our website with volume UP ;)🚀
+# 🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour mode" on our website with volume UP ;)🚀
 ##Apart from putting efforts on the website UI, to match the theme of our hackathon hack-enshmirtz, making the UI clean, memorable, We have introduced TOUR MODE!!
 
 ## 🎢 🎭 **TOUR MODE — Our Biggest Innovation Yet!**
