@@ -2,10 +2,15 @@
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ## ✨ **Hey Judges! THE TOUR MODE IS ON!**  
-### This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet. We've worked a lot on how to elevate the overall experience of the user, and a part of our endeavour to make the experince MEMORABLE, which serves as a method to RAISE awareness!
+This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet. We've worked a lot on how to elevate the overall experience of the user, and a part of our endeavour to make the experince MEMORABLE, which serves as a method to RAISE awareness!
+
+That's right, 
+##Immersive
+##Memorable
+##CreatingAwareness but in a Fun way
 
 > Predicting tsunamis is critical — but *understanding and raising awareness* them? That's what truly saves lives.  
-> We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
+> We want this project to *teach*, *inspire*, and maybe even help save someone’s village acorss the world someday. 💙🌊
 
 **Small note for judges** - Our ML model frontend-backend connection is coming in our next Feature Friday!
 ##**🌊 Till then, please do enjoy our LATEST FEATURE FRIDAY "Tour Mode" on our website with volume UP! 🚀**  
