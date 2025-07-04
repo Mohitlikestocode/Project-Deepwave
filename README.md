@@ -50,13 +50,10 @@ We combine:
 ## 🎥 **Check Out Our Demo!**
 
 👉 **Click the image below to watch our main website video:**  
-[![Watch the demo](https://github.com/user-attachments/assets/9e1c9ab7-6898-435c-9586-94dcd2d22803)](https://youtu.be/ak2QTYkNcWU)
+## [![Try It TOUR MODE Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv
 
----
-
-## 🔗 **Try It TOUR MODE Live**
-
-🌊 [https://project-deepwave.vercel.app/](https://project-deepwave.vercel.app/)
+##Youtube link - https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv
+## [🌊 Official Website](https://project-deepwave-taupe.vercel.app/)
 
 ---
 
