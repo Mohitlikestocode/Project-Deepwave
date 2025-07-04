@@ -2,8 +2,9 @@
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ## ✨ **Hey Judges! THE TOUR MODE IS ON!**  
-> This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet.  
-> Predicting tsunamis is critical — but *understanding* them? That's what truly saves lives.  
+## This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet. We've worked a lot on how to elevate the overall experience of the user, and a part of our endeavour to make the experince MEMORABLE, which serves as a method to RAISE awareness 
+
+> Predicting tsunamis is critical — but *understanding and raising awareness* them? That's what truly saves lives.  
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
 
 **Small note for judges** - Our ML model frontend-backend connection is coming in our next Feature Friday!
@@ -17,8 +18,41 @@
 
 **Along with enhancement of the overall UI/UX to match it with the hack-enshmirtz theme, a 2d Map, more features...
 We've also added automation for the globe - that is
--> When you click the globe, you can just click generate prediction, and it will AUTO scroll to the prediction arena...where it will auto enter the data...
--> Now,our ML model frontend-backend connection is coming in our next Feature Friday, but in addition to TOUR mode, we have also added this feature - to increase convinience of an aveage user. Trying to put attention to detail for overall user expereince :))**
+👉 When you click the globe, you can just click generate prediction, and it will AUTO scroll to the prediction arena...where it will auto enter the data...**
+👉 Now,our ML model frontend-backend connection is coming in our next Feature Friday, but in addition to TOUR mode, we have also added this feature - to increase convinience of an aveage user. 
+👉 Along with our Tour mode, we have also added a fun quiz - to make the entire experience memorable...because when you're made to think and maybe even laugh, you tend to rememebr the experience better :)
+👉**Trying to put attention to detail for overall user expereince :))**
+
+## 🛸 TOUR MODE — Immersive, Fun, and Unforgettable
+
+The brand-new **Tour Mode** is an elevator-style scroll journey across history’s biggest tsunamis:
+
+- 🚟 6 Levels: 5 iconic tsunami disasters + a fun interactive quiz
+- ⛱️ Real images, emotional context, floating fun fact clouds
+- 😍 Audio effects, black screen transitions, rain sounds, and atmospheric music
+- 🎮 A dramatic quiz section ("What’s the best way to survive a tsunami?") to reinforce safety + make it fun
+- 🚀 Memorable moments designed for **kids, families, future scientists** and all curious minds
+
+> "We want a 12-year-old to scroll through and say: *'Whoa... this was real?'*"
+
+Tour Mode is more than a feature—it's a tribute, a lesson, and an experience.
+
+---
+
+## 🌿 Educating Through Real Events
+
+We also use DeepWave to teach people about **real tsunami disasters**. 
+
+- 🔹 1960 Chilean Earthquake (M9.5)  
+- 🔹 2004 Indian Ocean Tsunami  
+- 🔹 2011 Tōhoku, Japan  
+- 🔹 1755 Lisbon, Portugal  
+- 🔹 1883 Krakatoa eruption  
+
+> These aren't just events. They're *why* we build this.
+
+By learning from the past, we build tools that might protect the future.
+
 
 ## 🌐 What is DeepWave?
 
@@ -54,35 +88,6 @@ It's not just functional—it's *engaging*, helping users better understand coas
 
 ---
 
-## 🛸 TOUR MODE — Immersive, Fun, and Unforgettable
-
-The brand-new **Tour Mode** is an elevator-style scroll journey across history’s biggest tsunamis:
-
-- 🚟 6 Levels: 5 iconic tsunami disasters + a fun interactive quiz
-- ⛱️ Real images, emotional context, floating fun fact clouds
-- 😍 Audio effects, black screen transitions, rain sounds, and atmospheric music
-- 🎮 A dramatic quiz section ("What’s the best way to survive a tsunami?") to reinforce safety + make it fun
-- 🚀 Memorable moments designed for **kids, families, future scientists** and all curious minds
-
-> "We want a 12-year-old to scroll through and say: *'Whoa... this was real?'*"
-
-Tour Mode is more than a feature—it's a tribute, a lesson, and an experience.
-
----
-
-## 🌿 Educating Through Real Events
-
-We also use DeepWave to teach people about **real tsunami disasters**. 
-
-- 🔹 1960 Chilean Earthquake (M9.5)  
-- 🔹 2004 Indian Ocean Tsunami  
-- 🔹 2011 Tōhoku, Japan  
-- 🔹 1755 Lisbon, Portugal  
-- 🔹 1883 Krakatoa eruption  
-
-> These aren't just events. They're *why* we build this.
-
-By learning from the past, we build tools that might protect the future.
 
 ---
 
