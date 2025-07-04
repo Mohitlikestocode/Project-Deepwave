@@ -2,7 +2,7 @@
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ## ✨ **Hey Judges! THE TOUR MODE IS ON!**  
-## This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet. We've worked a lot on how to elevate the overall experience of the user, and a part of our endeavour to make the experince MEMORABLE, which serves as a method to RAISE awareness 
+### This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet. We've worked a lot on how to elevate the overall experience of the user, and a part of our endeavour to make the experince MEMORABLE, which serves as a method to RAISE awareness!
 
 > Predicting tsunamis is critical — but *understanding and raising awareness* them? That's what truly saves lives.  
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
@@ -16,12 +16,12 @@
 
 ---
 
-**Along with enhancement of the overall UI/UX to match it with the hack-enshmirtz theme, a 2d Map, more features...
+**Along with enhancement of the overall UI/UX to match it with the hack-enshmirtz theme, a 2d Map, more features...**
 We've also added automation for the globe - that is
-👉 When you click the globe, you can just click generate prediction, and it will AUTO scroll to the prediction arena...where it will auto enter the data...**
-👉 Now,our ML model frontend-backend connection is coming in our next Feature Friday, but in addition to TOUR mode, we have also added this feature - to increase convinience of an aveage user. 
-👉 Along with our Tour mode, we have also added a fun quiz - to make the entire experience memorable...because when you're made to think and maybe even laugh, you tend to rememebr the experience better :)
-👉**Trying to put attention to detail for overall user expereince :))**
+-👉 When you click the globe, you can just click generate prediction, and it will AUTO scroll to the prediction arena...where it will auto enter the data...**
+-👉 Now,our ML model frontend-backend connection is coming in our next Feature Friday, but in addition to TOUR mode, we have also added this feature - to increase convinience of an aveage user. 
+-👉 Along with our Tour mode, we have also added a fun quiz - to make the entire experience memorable...because when you're made to think and maybe even laugh, you tend to rememebr the experience better :)
+-👉**Trying to put attention to detail for overall user expereince :))**
 
 ## 🛸 TOUR MODE — Immersive, Fun, and Unforgettable
 
