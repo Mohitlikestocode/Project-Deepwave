@@ -1,10 +1,12 @@
 # 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀
 
-> ✨ **Hey Judges! THE TOUR MODE IS ON!**  
+ #✨ **Hey Judges! THE TOUR MODE IS ON!**  
+ 
 > This Feature Friday, we're bringing you our most **immersive**, **fun**, and honestly *emotional* update yet.  
 > Predicting tsunamis is critical — but *understanding* them? That's what truly saves lives.  
 > We want this project to *teach*, *inspire*, and maybe even help save someone’s village someday. 💙🌊
-> ## Small note for judges - Our ML model frontend backened connection would be coming in our next Feature Friday..till then, please do enjoy our Tour mode, and our website with volume UP ;)
+
+ ## Small note for judges - Our ML model frontend backened connection would be coming in our next Feature Friday..till then, please do enjoy our Tour mode, and our website with volume UP ;)
 ---
 
 ##Apart from putting efforts on the website UI, to match the theme of our hackathon hack-enshmirtz, making the UI clean, memorable, We have introduced TOUR MODE!!
