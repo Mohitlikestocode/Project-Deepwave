@@ -7,6 +7,7 @@ import HistoricalEarthquakes from "@/components/HistoricalEarthquakes";
 import Footer from "@/components/Footer";
 import CosmicStarfield from "@/components/CosmicStarfield";
 import StoriesFactsCarousel from "@/components/StoriesFactsCarousel";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -337,14 +338,14 @@ const Index = () => {
               >
                 Return to Globe
               </button>
-              <a
-                href="/tour"
+              <Link
+                to="/tour"
                 className="cosmic-button px-8 py-3 text-lg font-orbitron font-bold shadow-lg border-2 border-cosmic-green text-cosmic-green bg-cosmic-black-light hover:bg-cosmic-green/10 transition-transform hover:scale-105"
                 style={{ letterSpacing: '0.1em', boxShadow: '0 0 12px 2px #a259e6' }}
                 aria-label="Tour Mode"
               >
                 🌊 Tour Mode
-              </a>
+              </Link>
             </div>
           </div>
         </section>

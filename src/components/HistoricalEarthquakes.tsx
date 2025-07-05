@@ -27,7 +27,7 @@ const HistoricalEarthquakes = () => {
       magnitude: 9.1,
       toll: "230,000+ casualties",
       impact: "Devastated coastlines across 14 countries, leading to major improvements in tsunami warning systems.",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400"
+      image: "/1.jpg"
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const HistoricalEarthquakes = () => {
       magnitude: 9.1,
       toll: "20,000+ casualties",
       impact: "Triggered Fukushima nuclear disaster, revolutionized tsunami preparedness and coastal defenses.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400"
+      image: "/2.jpg"
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ const HistoricalEarthquakes = () => {
       magnitude: 8.5,
       toll: "60,000+ casualties",
       impact: "First documented tsunami in Europe, influenced Enlightenment philosophy and seismology development.",
-      image: "https://images.unsplash.com/photo-1580500550469-0b85be48a5b0?w=400"
+      image: "/3.jpg"
     },
     {
       id: 4,

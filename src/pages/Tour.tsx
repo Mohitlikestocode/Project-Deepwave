@@ -201,6 +201,11 @@ export default function Tour() {
     if (songRef.current) songRef.current.volume = 1;
   }, []);
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="relative min-h-screen text-[#222] overflow-x-hidden">
       <div className="pt-16 pb-8 flex justify-center">
