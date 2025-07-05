@@ -131,36 +131,58 @@ export default function Tour() {
   }, [showText]);
 
   const goToFloor = (floor: number) => {
-    if (floor < 0 || floor >= SECTIONS) return;
+    if (floor < 0 || floor >= SECTIONS || isMoving) return;
     setIsMoving(true);
+    setCurrentFloor(floor); // Set the floor immediately to prevent vibration
     const target = floorRefs.current[floor].current as HTMLDivElement | null;
     if (target) {
       target.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(() => setIsMoving(false), 900);
+      setTimeout(() => setIsMoving(false), 1200); // Increased timeout for smoother transition
     }
   };
 
   useEffect(() => {
+    let scrollTimeout: NodeJS.Timeout;
+    
     function onScroll() {
-      const windowHeight = window.innerHeight;
-      let minDist = Infinity;
-      let closest = 0;
-      floorRefs.current.forEach((ref, i) => {
-        const el = ref.current as HTMLDivElement | null;
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          const dist = Math.abs(rect.top + rect.height / 2 - windowHeight / 2);
-          if (dist < minDist) {
-            minDist = dist;
-            closest = i;
+      // Clear the previous timeout
+      clearTimeout(scrollTimeout);
+      
+      // Set a new timeout to debounce the scroll event
+      scrollTimeout = setTimeout(() => {
+        const windowHeight = window.innerHeight;
+        let minDist = Infinity;
+        let closest = 0;
+        
+        floorRefs.current.forEach((ref, i) => {
+          const el = ref.current as HTMLDivElement | null;
+          if (el) {
+            const rect = el.getBoundingClientRect();
+            const dist = Math.abs(rect.top + rect.height / 2 - windowHeight / 2);
+            if (dist < minDist) {
+              minDist = dist;
+              closest = i;
+            }
           }
-        }
-      });
-      setCurrentFloor(closest);
+        });
+        
+        // Only update if the floor actually changed
+        setCurrentFloor(prev => {
+          if (prev !== closest) {
+            return closest;
+          }
+          return prev;
+        });
+      }, 100); // 100ms debounce
     }
-    window.addEventListener("scroll", onScroll);
+    
+    window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      clearTimeout(scrollTimeout);
+    };
   }, []);
 
   function isBetweenLevels(scrollProgress: number, sections: number, threshold = 0.12) {
@@ -287,7 +309,7 @@ export default function Tour() {
           ))}
         </div>
       </div>
-      <div className={`fixed left-1/2 top-32 -translate-x-1/2 w-48 h-48 bg-gradient-to-br from-[#ffb347] to-[#ffcc70] border-[3px] border-[#222] rounded-2xl shadow-xl backdrop-blur-md flex items-center justify-center z-40 transition-all duration-700 ${!isMoving ? 'animate-pulse' : ''}`} style={{ marginTop: '2rem' }}>
+      <div className={`fixed left-1/2 top-32 -translate-x-1/2 w-48 h-48 bg-gradient-to-br from-[#ffb347] to-[#ffcc70] border-[3px] border-[#222] rounded-2xl shadow-xl backdrop-blur-md flex items-center justify-center z-40 transition-all duration-700 ${!isMoving ? 'animate-pulse' : 'scale-105'}`} style={{ marginTop: '2rem' }}>
         <img src={elevatorImg} alt="Elevator" className="w-full h-full object-contain" />
       </div>
 

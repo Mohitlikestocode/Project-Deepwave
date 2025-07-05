@@ -16,7 +16,7 @@ const moreNavItems = [
 ];
 
 const sectionIds = [
-  "hero", "globe", "prediction", "dashboard", "introduction", "history", "technology", "impact"
+  "hero", "globe", "prediction", "dashboard", "history", "technology", "impact-stats", "impact", "faq"
 ];
 
 const Navigation = () => {
@@ -26,22 +26,66 @@ const Navigation = () => {
   const location = useLocation();
 
   useEffect(() => {
+    let scrollTimeout: NodeJS.Timeout;
+    
     const handleScroll = () => {
-      let found = "hero";
-      for (const id of sectionIds) {
-        const el = document.getElementById(id);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 80 && rect.bottom > 80) {
-            found = id;
-            break;
+      // Clear the previous timeout
+      clearTimeout(scrollTimeout);
+      
+      // Set a new timeout to debounce the scroll event
+      scrollTimeout = setTimeout(() => {
+        let found = "hero";
+        let minDistance = Infinity;
+        
+        // Check if we're in the hero or introduction section
+        const heroEl = document.getElementById("hero");
+        const introEl = document.getElementById("introduction");
+        
+        if (heroEl) {
+          const heroRect = heroEl.getBoundingClientRect();
+          const introRect = introEl?.getBoundingClientRect();
+          
+          // If we're in hero section or introduction section, stay on "hero"
+          if (heroRect.bottom > 80 || (introRect && introRect.bottom > 80)) {
+            found = "hero";
+          } else {
+            // Check other sections
+            for (const id of sectionIds) {
+              if (id === "hero") continue; // Skip hero as we already checked it
+              
+              const el = document.getElementById(id);
+              if (el) {
+                const rect = el.getBoundingClientRect();
+                const distance = Math.abs(rect.top - 80); // Distance from top of viewport
+                
+                // Find the section closest to the top of the viewport
+                if (distance < minDistance) {
+                  minDistance = distance;
+                  found = id;
+                }
+              }
+            }
           }
         }
-      }
-      setActive(found);
+        
+        // Only update if the active section actually changed
+        setActive(prev => {
+          if (prev !== found) {
+            return found;
+          }
+          return prev;
+        });
+      }, 200); // Increased debounce for more stability
     };
+    
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Initial call to set the correct active section
+    handleScroll();
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
   }, []);
 
   const handleNavClick = (e, path, id) => {
@@ -49,9 +93,13 @@ const Navigation = () => {
     setActive(id);
     setIsOpen(false);
     setShowMore(false);
+    
     const el = document.querySelector(path);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Add a small delay to ensure the state is updated before scrolling
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
     }
   };
 

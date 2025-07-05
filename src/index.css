@@ -75,4 +75,28 @@
     background-image: radial-gradient(circle at 1px 1px, rgba(0, 255, 136, 0.15) 1px, transparent 0);
     background-size: 20px 20px;
   }
+  
+  /* Enhanced Confetti Burst Animation */
+  @keyframes confetti-burst {
+    0% {
+      transform: translate(-50%, -50%) scale(0) rotate(0deg);
+      opacity: 0;
+    }
+    5% {
+      transform: translate(-50%, -50%) scale(var(--scale)) rotate(90deg);
+      opacity: 1;
+    }
+    15% {
+      transform: translate(-50%, -50%) scale(var(--scale)) rotate(180deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(calc(var(--end-x) - 50%), calc(var(--end-y) - 50%)) scale(calc(var(--scale) * 0.3)) rotate(var(--rotation));
+      opacity: 0;
+    }
+  }
+  
+  .animate-confetti-burst {
+    animation: confetti-burst 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
 }

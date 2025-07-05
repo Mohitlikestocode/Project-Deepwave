@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const question = {
   text: "What's the best way to survive a Tsunami?",
@@ -26,7 +26,7 @@ export default function TsunamiQuiz() {
   };
 
   return (
-    <div className="bg-[#fffbe6] border-4 border-[#a259e6] rounded-2xl px-8 py-6 shadow-xl max-w-xl mx-auto cartoon-outline text-xl font-bold text-[#222] flex flex-col items-center gap-4 animate-fadeIn">
+    <div className="relative bg-[#fffbe6] border-4 border-[#a259e6] rounded-2xl px-8 py-6 shadow-xl max-w-xl mx-auto cartoon-outline text-xl font-bold text-[#222] flex flex-col items-center gap-4 animate-fadeIn">
       <div className="text-2xl font-extrabold text-[#a259e6] mb-2">🌊 Tsunami Safety Quiz</div>
       <div className="mb-4 text-lg text-[#222]">{question.text}</div>
       <div className="flex flex-col gap-3 w-full">
