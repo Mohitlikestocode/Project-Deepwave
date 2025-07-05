@@ -15,7 +15,8 @@ When you visit our site, please **start with Tour Mode (volume up!)**. It’s no
 
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
----
+**Small note to our judges** - We shall connect our ML model to our frontend in our next Future Friday, till then **please experience our new Feature Friday - TOUR MODE :)** 
+--
 
 ## 🛸 🌟 **FEATURE FRIDAY: TOUR MODE** — Immersive, Fun, and Unforgettable
 
