@@ -155,15 +155,17 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick, onTourGameClick }
                 </div>
               )}
             </div>
-            {/* Tour & Game Mode Tab */}
-            <button
-              className={`px-4 py-2 rounded-full font-space font-medium flex items-center gap-1 transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md hover:from-pink-500 hover:to-purple-500 ${location.pathname === "/game" ? "ring-4 ring-purple-400/30" : ""}`}
-              aria-label="Tour & Game Mode"
-              onClick={() => navigate('/game')}
-              style={{ letterSpacing: "0.1em" }}
-            >
-              🎮 Tour & Game Mode
-            </button>
+            {/* Tour & Game Mode Tab (restored to open modal) */}
+            {onTourGameClick && (
+              <button
+                className={`px-4 py-2 rounded-full font-space font-medium flex items-center gap-1 transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md hover:from-pink-500 hover:to-purple-500`}
+                aria-label="Tour & Game Mode"
+                onClick={onTourGameClick}
+                style={{ letterSpacing: "0.1em" }}
+              >
+                🎮 Tour & Game Mode
+              </button>
+            )}
             {/* Tour Mode & Game Mode Modal Button (optional, can be removed if not needed) */}
             <button
               className="cosmic-button ml-2 px-6 py-2 text-base font-orbitron"
