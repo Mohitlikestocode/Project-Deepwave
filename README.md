@@ -1,9 +1,10 @@
-# 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀
+# 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀 - by Team Disaster Alertinator
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
 
-## ✨ **Hey Judges! THE TOUR MODE IS ON!**  
+## ✨ **Hey Judges! THE TOUR MODE IS ON!(OUR FEATURE FRIDAY)**  
+(Kindly scroll down to read our readme)
 **This Feature Friday, our biggest, most emotional, and most *immersive* update yet is LIVE.**  
 We've designed it to **teach**, **inspire**, and *raise awareness* about tsunamis in a way that's truly **memorable**.
 
@@ -15,7 +16,8 @@ When you visit our site, please **start with Tour Mode (volume up!)**. It’s no
 
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
----
+**Small note to our judges** - We shall connect our ML model to our frontend in our next Future Friday, till then **please experience our new Feature Friday - TOUR MODE :)** 
+--
 
 ## 🛸 🌟 **FEATURE FRIDAY: TOUR MODE** — Immersive, Fun, and Unforgettable
 
