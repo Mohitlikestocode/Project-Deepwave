@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PerryTsunamiGame from '@/components/PerryTsunamiGame';
-import looseMyMind from '@/components/Loosemymind.mp3';
+import looseMyMind from '@/components/loosemymind.mp3';
 import tokyoDrift from '@/components/tokyodrift.mp3';
 import tourTheme from '@/components/jazz.mp3';
 import AuthModal from '@/components/AuthModal';
