@@ -7,6 +7,7 @@ import { useState } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Tour from "./pages/Tour";
+import GamePage from "./pages/GamePage";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -20,6 +21,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/tour" element={<Tour />} />
+            <Route path="/game" element={<GamePage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

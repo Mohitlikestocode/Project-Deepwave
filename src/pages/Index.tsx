@@ -7,14 +7,70 @@ import HistoricalEarthquakes from "@/components/HistoricalEarthquakes";
 import Footer from "@/components/Footer";
 import CosmicStarfield from "@/components/CosmicStarfield";
 import StoriesFactsCarousel from "@/components/StoriesFactsCarousel";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import AuthModal from "@/components/AuthModal";
+import { useState, useRef } from "react";
+import jazzMp3 from "@/components/jazz.mp3";
+import PerryTsunamiGame from "@/components/PerryTsunamiGame";
+import TourGameModeModal from "@/components/TourGameModeModal";
+import GamePage from "@/pages/GamePage";
 
 const Index = () => {
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [showTourGameModal, setShowTourGameModal] = useState(false);
+  const navigate = useNavigate();
+
+  // Fade in music
+  const playJazz = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = 0;
+      audio.currentTime = 0;
+      audio.play();
+      const fadeIn = setInterval(() => {
+        if (audio.volume < 0.5) {
+          audio.volume = Math.min(audio.volume + 0.05, 0.5);
+        } else {
+          clearInterval(fadeIn);
+        }
+      }, 60);
+    }
+  };
+
+  // Fade out music
+  const fadeOutJazz = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      const fadeOut = setInterval(() => {
+        if (audio.volume > 0.01) {
+          audio.volume = Math.max(audio.volume - 0.05, 0);
+        } else {
+          audio.pause();
+          clearInterval(fadeOut);
+        }
+      }, 60);
+    }
+  };
+
   return (
     <div className="min-h-screen relative">
+      <audio ref={audioRef} src={jazzMp3} loop={false} />
       <CosmicStarfield />
       <div className="space-grid min-h-screen">
-        <Navigation />
+        <Navigation
+          onLoginClick={() => { setShowAuthModal(true); }}
+          onTourGameClick={() => setShowTourGameModal(true)}
+        />
+        {showTourGameModal && (
+          <TourGameModeModal onClose={() => setShowTourGameModal(false)} fadeOutJazz={fadeOutJazz} />
+        )}
+        <AuthModal
+          isOpen={showAuthModal}
+          onClose={() => setShowAuthModal(false)}
+          playJazz={playJazz}
+          fadeOutJazz={fadeOutJazz}
+        />
         <section id="hero" data-aos="fade-up"><HeroSection /></section>
         <section id="introduction" data-aos="fade-up">
           <div className="py-20 px-4 max-w-5xl mx-auto text-center relative">
@@ -61,6 +117,23 @@ const Index = () => {
             </div>
           </div>
         </section>
+        {/* Tour & Game Mode Row Buttons */}
+        <div className="flex justify-center gap-8 mt-12 mb-8">
+          <button
+            className="px-8 py-4 bg-cosmic-blue text-cosmic-black font-extrabold text-2xl rounded-full shadow-lg border-4 border-cosmic-blue hover:bg-cosmic-blue-dark transition-all duration-300"
+            onClick={() => navigate('/tour')}
+            style={{ letterSpacing: '0.1em' }}
+          >
+            Tour Mode
+          </button>
+          <button
+            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-extrabold text-2xl rounded-full shadow-lg border-4 border-purple-500 hover:from-pink-500 hover:to-purple-500 transition-all duration-300"
+            onClick={() => navigate('/game')}
+            style={{ letterSpacing: '0.1em' }}
+          >
+            Game Mode
+          </button>
+        </div>
         <section id="globe"><InteractiveGlobe /></section>
         
         {/* Bridge to Prediction */}
@@ -373,6 +446,16 @@ const Index = () => {
           </div>
         </section>
         <section id="footer" data-aos="fade-up"><Footer /></section>
+        <section id="mini-game" className="py-16 px-4 max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold neon-text mb-4">Mini Game: Perry Tsunami Catcher</h2>
+          <p className="text-cosmic-silver font-space text-lg mb-6">Play as Perry and catch as many 🌊 as you can! (Coming soon...)</p>
+          <div className="flex justify-center">
+            {/* Mini game will be rendered here */}
+            <div id="perry-snake-game" className="w-[600px] h-[600px] bg-cosmic-black-light border border-cosmic-blue/30 rounded-lg flex items-center justify-center">
+              <PerryTsunamiGame />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

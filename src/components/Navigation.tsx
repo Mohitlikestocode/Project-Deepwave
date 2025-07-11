@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Satellite, Home, BarChart2, HelpCircle, Activity, Zap, List, Globe } from 'lucide-react';
 
 const mainNavItems = [
@@ -19,11 +19,17 @@ const sectionIds = [
   "hero", "globe", "prediction", "dashboard", "history", "technology", "impact-stats", "impact", "faq"
 ];
 
-const Navigation = () => {
+interface NavigationProps {
+  onLoginClick?: () => void;
+  onTourGameClick?: () => void;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ onLoginClick, onTourGameClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("hero");
   const [showMore, setShowMore] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
@@ -104,14 +110,14 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-cosmic-black/80 backdrop-blur-md border-b border-cosmic-blue/30 shadow-lg" aria-label="Main Navigation">
+    <nav className="fixed top-0 w-full z-50 bg-cosmic-black/80 backdrop-blur-md border-b border-cosmic-blue/30 shadow-lg h-24 flex items-center" aria-label="Main Navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-3">
-            <Satellite className="h-8 w-8 text-cosmic-green animate-pulse-glow" aria-label="Logo" />
-            <span className="text-xl font-orbitron font-bold neon-text">Project DeepWave</span>
+        <div className="flex items-center justify-between h-24">
+          <div className="flex items-center space-x-3 mr-8" style={{ marginLeft: '-1.5rem' }}>
+            <Satellite className="h-10 w-10 text-cosmic-green animate-pulse-glow" aria-label="Logo" />
+            <span className="text-2xl font-orbitron font-bold neon-text">Project DeepWave</span>
           </div>
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-4">
             {mainNavItems.map((item) => (
               <a
                 key={item.name}
@@ -149,14 +155,23 @@ const Navigation = () => {
                 </div>
               )}
             </div>
-            <Link
-              to="/tour"
-              className={`tour-nav-btn px-4 py-2 rounded-full font-bold border-2 border-cosmic-green text-cosmic-green bg-cosmic-black-light shadow-lg hover:bg-cosmic-green/10 transition-all duration-300${location.pathname === "/tour" ? " active ring-4 ring-cosmic-green/30" : ""}`}
-              aria-label="Tour Mode"
-              style={{ letterSpacing: "0.1em", boxShadow: '0 0 12px 2px #a259e6' }}
+            {/* Tour & Game Mode Tab */}
+            <button
+              className={`px-4 py-2 rounded-full font-space font-medium flex items-center gap-1 transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md hover:from-pink-500 hover:to-purple-500 ${location.pathname === "/game" ? "ring-4 ring-purple-400/30" : ""}`}
+              aria-label="Tour & Game Mode"
+              onClick={() => navigate('/game')}
+              style={{ letterSpacing: "0.1em" }}
             >
-              🌊 Tour Mode
-            </Link>
+              🎮 Tour & Game Mode
+            </button>
+            {/* Tour Mode & Game Mode Modal Button (optional, can be removed if not needed) */}
+            <button
+              className="cosmic-button ml-2 px-6 py-2 text-base font-orbitron"
+              onClick={onLoginClick}
+              type="button"
+            >
+              Login
+            </button>
           </div>
           <div className="md:hidden">
             <button
@@ -186,6 +201,14 @@ const Navigation = () => {
                   {item.icon}{item.name}
                 </a>
               ))}
+              {/* Mobile Login Button */}
+              <button
+                className="cosmic-button w-full mt-2"
+                onClick={onLoginClick}
+                type="button"
+              >
+                Login
+              </button>
             </div>
           </div>
         )}
