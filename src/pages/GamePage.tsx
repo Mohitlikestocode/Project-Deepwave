@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import PerryTsunamiGame from '@/components/PerryTsunamiGame';
 import looseMyMind from '@/components/loosemymind.mp3';
 import tokyoDrift from '@/components/tokyodrift.mp3';
-import tourTheme from '@/components/jazz.mp3';
+import tourTheme from './song.mp3';
 import AuthModal from '@/components/AuthModal';
 import { useNavigate } from 'react-router-dom';
 
@@ -23,6 +23,9 @@ const GamePage: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const themeRef = useRef<HTMLAudioElement>(null);
   const navigate = useNavigate();
+  const [showExitBlack, setShowExitBlack] = useState(false);
+  const [showExitText, setShowExitText] = useState(false);
+  const [exitFadeOut, setExitFadeOut] = useState(false);
 
   // Play tour theme by default
   useEffect(() => {
@@ -159,6 +162,40 @@ const GamePage: React.FC = () => {
     };
   }, []);
 
+  const handleReturnToHome = () => {
+    setShowExitBlack(true);
+    setTimeout(() => setShowExitText(true), 500);
+    setTimeout(() => {
+      // Fade out whichever song is playing
+      let audio = null;
+      if (isPlaying && audioRef.current && !audioRef.current.paused) {
+        audio = audioRef.current;
+      } else if (themeRef.current && !themeRef.current.paused) {
+        audio = themeRef.current;
+      }
+      if (audio) {
+        let fadeAudio = () => {
+          if (audio.volume > 0.05) {
+            audio.volume -= 0.05;
+            setTimeout(fadeAudio, 50);
+          } else {
+            audio.volume = 0;
+            setShowExitBlack(false);
+            setShowExitText(false);
+            setExitFadeOut(false);
+            navigate('/');
+          }
+        };
+        fadeAudio();
+      } else {
+        setShowExitBlack(false);
+        setShowExitText(false);
+        setExitFadeOut(false);
+        navigate('/');
+      }
+    }, 3000);
+  };
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-cosmic-black px-8 py-16 relative">
       {/* Auth Modal */}
@@ -189,7 +226,7 @@ const GamePage: React.FC = () => {
         <div className="flex gap-4">
           <button
             className="px-6 py-3 bg-cosmic-blue text-cosmic-black font-bold text-lg rounded-lg shadow hover:bg-cosmic-blue-dark transition-all"
-            onClick={() => navigate('/')}
+            onClick={handleReturnToHome}
           >
             Return to Main Page
           </button>
@@ -256,6 +293,13 @@ const GamePage: React.FC = () => {
           </div>
         </div>
       </div>
+      {showExitBlack && (
+        <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 ${exitFadeOut ? 'opacity-0' : 'opacity-100'}`}>
+          {showExitText && (
+            <span className={`text-4xl md:text-6xl font-extrabold tracking-widest text-white transition-opacity duration-700 ${exitFadeOut ? 'opacity-0' : 'opacity-100'}`}>Time for Disaster Alertinator</span>
+          )}
+        </div>
+      )}
     </div>
   );
 };
