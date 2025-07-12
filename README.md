@@ -1,15 +1,13 @@
 # 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀  
 by **Team Disaster Alertinator**
-
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
 ## ✨ **Hey Judges! OUR LATEST FEATURE FRIDAY IS LIVE!** 🎮🔒  
-### 🌟 **FEATURE FRIDAY: Perry Tsunami Game 🎮 + User Authentication 🔐**
+### 🌟 **FEATURE FRIDAY: Perry Tsunami Game 🎮 + User Authentication 🔐(Plase find the Tour&Game mode and the LOGIN options on our navigation!)**
 
 **This Feature Friday brings TWO massive updates that make DeepWave more interactive and secure than ever!**
 > **Gaming meets Education meets Security — Perry the Platypus style! 🦆**
-
 When you visit our site, experience our **Perry Tsunami Game** and **User Authentication System** — it's not just features, it's an adventure designed to make learning about tsunamis **fun**, **secure**, and **unforgettable**.
 ---
 
