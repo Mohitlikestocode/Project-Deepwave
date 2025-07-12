@@ -26,6 +26,9 @@ const GamePage: React.FC = () => {
   const [showExitBlack, setShowExitBlack] = useState(false);
   const [showExitText, setShowExitText] = useState(false);
   const [exitFadeOut, setExitFadeOut] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
+  const [showIntroText, setShowIntroText] = useState(false);
+  const [introFadeOut, setIntroFadeOut] = useState(false);
 
   // Play tour theme by default
   useEffect(() => {
@@ -162,6 +165,17 @@ const GamePage: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const textTimer = setTimeout(() => setShowIntroText(true), 1000);
+    const fadeTimer = setTimeout(() => setIntroFadeOut(true), 3000);
+    const removeTimer = setTimeout(() => setShowIntro(false), 3500);
+    return () => {
+      clearTimeout(textTimer);
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+    };
+  }, []);
+
   const handleReturnToHome = () => {
     setShowExitBlack(true);
     setTimeout(() => setShowExitText(true), 500);
@@ -293,6 +307,15 @@ const GamePage: React.FC = () => {
           </div>
         </div>
       </div>
+      {showIntro && (
+        <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 ${introFadeOut ? 'opacity-0' : 'opacity-100'}`}>
+          {showIntroText && (
+            <span className={`text-4xl md:text-6xl font-extrabold tracking-widest text-white transition-opacity duration-700 ${introFadeOut ? 'opacity-0' : 'opacity-100'}`}>
+              Buckle up! Let's see if you can catch Tsunamis just like us.!
+            </span>
+          )}
+        </div>
+      )}
       {showExitBlack && (
         <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 ${exitFadeOut ? 'opacity-0' : 'opacity-100'}`}>
           {showExitText && (
