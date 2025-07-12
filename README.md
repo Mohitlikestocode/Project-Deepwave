@@ -1,6 +1,5 @@
-# �� Project DeepWave — hack-enshmirtz HACKATHON PROJECT �� - by Team Disaster Alertinator
-
-[�� **Official Website**](https://project-deepwave-taupe.vercel.app/)
+# 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀 - by Team Disaster Alertinator
+[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
 
