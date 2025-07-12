@@ -8,13 +8,9 @@ by **Team Disaster Alertinator**
 ### 🌟 **FEATURE FRIDAY: Perry Tsunami Game 🎮 + User Authentication 🔐**
 
 **This Feature Friday brings TWO massive updates that make DeepWave more interactive and secure than ever!**
-
 > **Gaming meets Education meets Security — Perry the Platypus style! 🦆**
 
 When you visit our site, experience our **Perry Tsunami Game** and **User Authentication System** — it's not just features, it's an adventure designed to make learning about tsunamis **fun**, **secure**, and **unforgettable**.
-
-[🌐 **Visit Now**](https://project-deepwave-taupe.vercel.app/)
-
 ---
 
 ### 🔐 Login ID Screen  
