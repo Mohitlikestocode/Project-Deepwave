@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import perryImg from './perry.png';
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://vcbthsojdmwopnggkddu.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZjYnRoc29qZG13b3BuZ2drZGR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIyOTU5MzYsImV4cCI6MjA2Nzg3MTkzNn0.J1MOLs1crS6_iPlPWULKHmeJvOW8rj6-QuihnI2DydI';
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -14,6 +19,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [info, setInfo] = useState('');
 
   // Fun Perry message
   const perryMessage = (
@@ -39,6 +45,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
     setEmail('');
     setPassword('');
     setConfirmPassword('');
+    setInfo('');
   };
 
   const handleReturnToMain = () => {
@@ -46,9 +53,9 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
     onClose();
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Basic validation (expand later)
+    setInfo('');
     if (!email || !password || (tab === 'register' && !confirmPassword)) {
       setError('Please fill in all fields.');
       return;
@@ -58,9 +65,56 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
       return;
     }
     setError('');
-    // TODO: Call backend API here
-    fadeOutJazz();
-    onClose();
+    try {
+      if (tab === 'register') {
+        const { error: signUpError } = await supabase.auth.signUp({ email, password });
+        if (signUpError) {
+          setError(signUpError.message);
+          return;
+        }
+        setInfo('Registration successful! Please check your email to confirm your account before logging in.');
+      } else {
+        const { error: signInError } = await supabase.auth.signInWithPassword({ email, password });
+        if (signInError) {
+          if (
+            signInError.message.toLowerCase().includes('invalid login credentials') ||
+            signInError.message.toLowerCase().includes('user not found')
+          ) {
+            setError('Invalid login ID, please register first!');
+          } else if (signInError.message.toLowerCase().includes('email not confirmed')) {
+            setError('Email not confirmed. Please check your inbox and confirm your email before logging in.');
+          } else {
+            setError(signInError.message);
+          }
+          return;
+        }
+        setInfo('Congratulations, you are in!');
+        setTimeout(() => {
+          fadeOutJazz();
+          onClose();
+        }, 2000);
+        return;
+      }
+    } catch (err) {
+      setError('Network error. Please try again.');
+    }
+  };
+
+  // Optimize input fields for smoother typing
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    setError('');
+    setInfo('');
+  };
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.target.value);
+    setError('');
+    setInfo('');
+  };
+  const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setConfirmPassword(e.target.value);
+    setError('');
+    setInfo('');
   };
 
   return (
@@ -120,7 +174,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
               placeholder="Email"
               className="w-full px-4 py-3 rounded-lg bg-cosmic-black-light text-cosmic-silver border border-cosmic-blue/30 focus:outline-none focus:ring-2 focus:ring-cosmic-green"
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={handleEmailChange}
               required
             />
             <input
@@ -128,7 +182,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
               placeholder="Password"
               className="w-full px-4 py-3 rounded-lg bg-cosmic-black-light text-cosmic-silver border border-cosmic-blue/30 focus:outline-none focus:ring-2 focus:ring-cosmic-green"
               value={password}
-              onChange={e => setPassword(e.target.value)}
+              onChange={handlePasswordChange}
               required
             />
             {tab === 'register' && (
@@ -137,11 +191,12 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, playJazz, fadeOu
                 placeholder="Confirm Password"
                 className="w-full px-4 py-3 rounded-lg bg-cosmic-black-light text-cosmic-silver border border-cosmic-blue/30 focus:outline-none focus:ring-2 focus:ring-cosmic-green"
                 value={confirmPassword}
-                onChange={e => setConfirmPassword(e.target.value)}
+                onChange={handleConfirmPasswordChange}
                 required
               />
             )}
             {error && <div className="text-red-500 text-sm font-bold text-center">{error}</div>}
+            {info && <div className="text-green-500 text-sm font-bold text-center">{info}</div>}
             <button
               type="submit"
               className="cosmic-button w-full mt-2"
