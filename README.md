@@ -1,111 +1,169 @@
-# 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀 - by Team Disaster Alertinator
-[🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
-
----
-
-## ✨ **Hey Judges! THE TOUR MODE IS ON!(OUR FEATURE FRIDAY)**  
-(Kindly scroll down to read our readme)
-**This Feature Friday, our biggest, most emotional, and most *immersive* update yet is LIVE.**  
-We've designed it to **teach**, **inspire**, and *raise awareness* about tsunamis in a way that's truly **memorable**.
-
-> **Immersive. Memorable. Creating Awareness — but in a Fun Way.**
-
-When you visit our site, please **start with Tour Mode (volume up!)**. It’s not just a feature—it’s an experience designed to make you *feel* the stories of real disasters.
-
-[![🎥 Try Tour Mode Live](https://github.com/user-attachments/assets/28843997-4d3f-481d-a11b-45a46e03eed9)](https://youtu.be/VtGK9gZfhZw?si=TyV3Foimka66MRCv)
+# 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀  
+by **Team Disaster Alertinator**
 
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
-**Small note to our judges** - We shall connect our ML model to our frontend in our next Future Friday, till then **please experience our new Feature Friday - TOUR MODE :)** 
---
+---
+## ✨ **Hey Judges! OUR LATEST FEATURE FRIDAY IS LIVE!** 🎮🔒  
+### 🌟 **FEATURE FRIDAY: Perry Tsunami Game 🎮 + User Authentication 🔐**
 
-## 🛸 🌟 **FEATURE FRIDAY: TOUR MODE** — Immersive, Fun, and Unforgettable
+**This Feature Friday brings TWO massive updates that make DeepWave more interactive and secure than ever!**
+> **Gaming meets Education meets Security — Perry the Platypus style! 🦆**
 
-Tour Mode is a **scroll-driven elevator journey** through history’s most devastating tsunamis:
+When you visit our site, experience our **Perry Tsunami Game** and **User Authentication System** — it's not just features, it's an adventure designed to make learning about tsunamis **fun**, **secure**, and **unforgettable**.
+---
 
-- 🚟 6 Levels: 5 real historical tsunami disasters + an interactive safety quiz
-- 🖼️ Real images, dramatic transitions, floating fact clouds
-- 🎶 Audio: Familiar music ;) It's perry the platypus music :))
-- 🧠 A quiz to reinforce safety knowledge in a **fun** way. It makes the whole experience Interactive, fun and memorable :P
+### 🔐 Login ID Screen  
+<img width="800" alt="Login ID screen" src="https://github.com/user-attachments/assets/025a72ce-fd53-4fce-b75d-15096e0470a9" />
 
-> “We want a 12-year-old to scroll through and say: *‘Whoa… this was real?’*”
+### 🧭 Choose Your Mode  
+<img width="800" alt="Choose Your Mode" src="https://github.com/user-attachments/assets/bca3afe1-a33a-4871-ba6a-8b5292e9e8d8" />
 
-It’s designed to **educate**, **move**, and **stick** in the mind—because awareness is what saves lives.
+### 🎮 Perry Tsunami Game  
+<img width="800" alt="Perry Tsunami Game" src="https://github.com/user-attachments/assets/fc8586e7-9e23-4605-a529-41365c8a8171" />
 
+
+## 🎓 Inspired by Node.js & Authorization Workshop with Manan & Rohit!
+Huge shoutout to **Manan** and **Rohit** for their Node.js and Authorization session, We were so fired up by the ideas they shared that we couldn't just sit still — so we brought robust, **Perry-style authentication** to DeepWave! Couldn't think it was possible, but after the session we did it. Supbase - nodjs connection :)) 
+
+And in addition, the GAME MODE! (Played way too long lol...enjoy the two songs you can put while you're on the game ;))
+Because **awareness isn't just about data and numbers.** It's about creating an *experience* that people remember.  
+Something that says:
+
+> *"Disaster Alertinator’s got your back when it comes to tsunamis!"*
+
+## 🎮 **FEATURE FRIDAY: PERRY TSUNAMI GAME** — Catch Tsunamis Like a Secret Agent!
+
+Introducing our **custom-built snake game** where Perry the Platypus catches tsunami emojis!  
+It's not *just* a game — it's our way of turning disaster preparedness into something unforgettable:
+
+### 🎯 Game Highlights:
+- **20 Rounds of Tsunami Catching Action** 🌊
+- **Progressive Difficulty** with increasing speed
+- **Achievements** unlocked at 10 & 20 tsunamis
+- **"GOD MODE"** at 20 tsunamis — unlock ultimate bragging rights
+- **Nostalgic Vibes** with Perry-themed UI & music
+
+### 🎵 Musical Experience:
+- Unlock soundtracks like **"Loose My Mind"** and **"Tokyo Drift"**
+- Smooth fade-in/out transitions for immersive play
+
+### 🏆 Achievement Messages:
+- **10 Tsunamis:** _"Congratulations! Music player unlocked!"_
+- **20 Tsunamis:** _"GOD MODE ACTIVATED!"_ (Game pauses until retry)
+
+> *"We want players to feel like they're helping Perry save the world from tsunamis!"*
 
 ---
 
-## 🌿 **Educational Through Real Events**
+## 🔐 **FEATURE FRIDAY: USER AUTHENTICATION SYSTEM** — Secure Access, Perry Style!
 
-DeepWave’s Tour Mode spotlights **real historical tsunamis** to teach lessons that matter:
+Built with **Supabase**, our authentication system ensures only real agents can access the secrets of DeepWave.
 
-- 1960 Chilean Earthquake (M9.5)
-- 2004 Indian Ocean Tsunami
-- 2011 Tōhoku, Japan
-- 1755 Lisbon, Portugal
-- 1883 Krakatoa eruption
+### 🛡️ Security Features:
+- Email Registration with verification  
+- Secure Login for registered users only  
+- Custom Error Messages like _"Invalid login ID, please register first!"_  
+- Success Message: _"Congratulations, you are in!"_ (auto-closes)  
+- Glassmorphism design for clean modern UI
 
-> These aren’t just events. They’re *why* we’re building this.
+### 🎨 UI/UX Enhancements:
+- Perry-themed glass modal  
+- Jazz music during login  
+- Responsive and smooth animation  
+- Blurred background for focus
 
----
+### 🔄 User Flow:
+1. **Register** → Confirm via email  
+2. **Login** → Only verified users allowed  
+3. **Success** → 2-second celebration + auto-close  
+4. **Errors** → Helpful, clear feedback
 
-## ⚡️ **Beyond Tour Mode: Other Enhancements**
-Alongside Tour Mode, we've also focused on **overall UX/UI improvements** in line with the hack-enshmirtz theme, adding more features and details to make DeepWave intuitive and accessible:
-
-- 🌍 **Interactive 3D NASA Earth Globe**  
-  - Spin, zoom, and **click to select precise coordinates**
-  - View instantly displayed WGS84 coordinates
-  - Realistic NASA textures with custom bounce animation
-- 🗺️ **New 2D Map View**  
-  - Easier for certain users to navigate
-- 🤖 **Automation Features**  
-  - Click **Generate Prediction** to auto-scroll to the prediction arena
-  - Auto-fill example data (while waiting for ML integration)
-- 🧩 **Integrated Quiz Outside Tour Mode**  
-  - Even outside the elevator journey, users can test their tsunami knowledge
-  - Reinforces learning through interactivity
-- 🌱 **Attention to Detail**  
-  - Smoother transitions, atmospheric effects, and thoughtful copy throughout
-
-> **We're trying to make this experience *convenient*, *memorable*, and *meaningful*.**
+> *"Security doesn’t have to be boring — Perry makes it fun!"*
 
 ---
 
-## 🌐 **What is DeepWave?**
+## 🛸 PREVIOUS FEATURE FRIDAY: TOUR MODE — Immersive & Emotional
 
-DeepWave is a web app designed to help **predict tsunami risk** at any coastal location.
+Take a **scroll-driven elevator journey** through the most devastating tsunamis in history:
 
-It combines:
+### 🚟 Tour Features:
+- **6 Levels**: 5 historical disasters + 1 interactive safety quiz  
+- **Real Images & Transitions**  
+- **Music & Atmosphere**  
+- **Quiz Mode** to reinforce tsunami safety knowledge
 
-- 🌊 A **Machine Learning Model** predicting tsunami risk from coordinates  
-- 🌍 An **Interactive 3D Earth** so users can choose precise locations intuitively  
-- 🛸 **Tour Mode** — an emotional, educational experience about real disasters
+### 🌍 Historical Events Covered:
+- 1960 Chilean Earthquake (M9.5)  
+- 2004 Indian Ocean Tsunami  
+- 2011 Tōhoku, Japan  
+- 1755 Lisbon, Portugal  
+- 1883 Krakatoa eruption  
 
-Our mission:
-
-> **“Making critical geolocation data entry accessible and intuitive — for moments when precision saves lives.”**
-
----
-
-## 📈 **AI Model & Future Integration**
-
-- ML backend with **91% accuracy**  
-- Inputs: latitude, longitude, magnitude, depth
-- Currently under **frontend-backend integration** — going live **next Feature Friday!**
+> *"We want a 12-year-old to scroll through and say: ‘Whoa… this was real?’"*
 
 ---
 
-## 🚀 **Quick Start**
+## ⚡️ **Beyond Gaming & Auth: Other Enhancements**
+
+DeepWave is more than just tools — it's an experience:
+
+### 🌍 Interactive 3D NASA Globe:
+- Zoom, rotate, and click for **precise tsunami coordinates**
+- Realistic NASA textures + bounce animation
+
+### 🗺️ New 2D Map View:
+- Easier navigation for many users
+
+### 🤖 Automation:
+- Click "Generate Prediction" to scroll directly to prediction arena  
+- Auto-fills sample data (while ML is loading)
+
+### 🧩 Mini Quiz Outside Tour Mode:
+- Knowledge retention outside the elevator game too
+
+### 🌱 Attention to Detail:
+- Smooth transitions  
+- Atmospheric effects  
+- Thematic text
+
+> **We’ve crafted something fun, secure, memorable — and potentially life-saving.**
+
+---
+
+## 🌊 What is DeepWave?
+
+A tsunami prediction web app that combines:
+
+- 🌊 **AI Risk Prediction** from coordinates  
+- 🌍 **Interactive 3D Earth** interface  
+- 🛸 **Tour Mode** with real historical events  
+- 🎮 **Perry Tsunami Game**  
+- 🔐 **User Authentication System**
+
+> **"Making geolocation data entry fun, intuitive, and secure — because sometimes, precision saves lives."**
+
+---
+
+## 📈 AI Model & Future Integration
+
+- ML backend (91% accuracy!)  
+- Inputs: latitude, longitude, magnitude, depth  
+- Frontend-backend integration **coming next Feature Friday!**
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-# 1️⃣ Clone this repo
-git clone <YOUR_GIT_URL>
+# 1️⃣ Clone the repo
+git clone https://github.com/Mohitlikestocode/Project-Deepwave.git
 
-# 2️⃣ Go to the project folder
-cd wavefront
+# 2️⃣ Navigate to the folder
+cd Project-Deepwave-main
 
 # 3️⃣ Install dependencies
 npm install
 
-# 4️⃣ Start the development server
+# 4️⃣ Start the dev server
 npm run dev
