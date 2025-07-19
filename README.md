@@ -1,83 +1,67 @@
 # 🌊 Project DeepWave — hack-enshmirtz HACKATHON PROJECT 🚀  
-by **Team Disaster Alertinator**
+by **Team Disaster Alertinator**  
 [🌐 **Official Website**](https://project-deepwave-taupe.vercel.app/)
 
 ---
-## ✨ **Hey Judges! OUR LATEST FEATURE FRIDAY IS LIVE!** 🎮🔒  
-### 🌟 **FEATURE FRIDAY: Perry Tsunami Game 🎮 + User Authentication 🔐(Plase find the Tour&Game mode and the LOGIN options on our navigation!)**
 
-**This Feature Friday brings TWO massive updates that make DeepWave more interactive and secure than ever!**
-> **Gaming meets Education meets Security — Perry the Platypus style! 🦆**
-When you visit our site, experience our **Perry Tsunami Game** and **User Authentication System** — it's not just features, it's an adventure designed to make learning about tsunamis **fun**, **secure**, and **unforgettable**.
----
+## ✨ **Hey Judges! OUR LATEST FEATURE FRIDAY IS ALMOST LIVE!** 📱🛰️  
+### 🌟 **FEATURE FRIDAY: Real-Time Community Reporting + Fully Responsive Mobile Layout**  
+*(Test it out on your phone — and try submitting a live report!)*
 
-### 🔐 Login ID Screen  
-<img width="800" alt="Login ID screen" src="https://github.com/user-attachments/assets/025a72ce-fd53-4fce-b75d-15096e0470a9" />
+This Feature Friday is about bringing **people into the loop** — because your senses might detect the next big wave before the sensors do.
 
-### 🧭 Choose Your Mode  
-<img width="800" alt="Choose Your Mode" src="https://github.com/user-attachments/assets/bca3afe1-a33a-4871-ba6a-8b5292e9e8d8" />
+> **Machines predict. Humans feel. Together, we alert better.**
 
-### 🎮 Perry Tsunami Game  
-<img width="800" alt="Perry Tsunami Game" src="https://github.com/user-attachments/assets/fc8586e7-9e23-4605-a529-41365c8a8171" />
-
-
-## 🎓 Inspired by Node.js & Authorization Workshop with Manan & Rohit!
-Huge shoutout to **Manan** and **Rohit** for their Node.js and Authorization session, We were so fired up by the ideas they shared that we couldn't just sit still — so we brought robust, **Perry-style authentication** to DeepWave! Couldn't think it was possible, but after the session we did it. Supbase - nodjs connection :)) 
-
-And in addition, the GAME MODE! (Played way too long lol...enjoy the two songs you can put while you're on the game ;))
-Because **awareness isn't just about data and numbers.** It's about creating an *experience* that people remember.  
-Something that says:
-
-> *"Disaster Alertinator’s got your back when it comes to tsunamis!"*
-
-## 🎮 **FEATURE FRIDAY: PERRY TSUNAMI GAME** — Catch Tsunamis Like a Secret Agent!
-
-Introducing our **custom-built snake game** where Perry the Platypus catches tsunami emojis!  
-It's not *just* a game — it's our way of turning disaster preparedness into something unforgettable:
-
-### 🎯 Game Highlights:
-- **20 Rounds of Tsunami Catching Action** 🌊
-- **Progressive Difficulty** with increasing speed
-- **Achievements** unlocked at 10 & 20 tsunamis
-- **"GOD MODE"** at 20 tsunamis — unlock ultimate bragging rights
-- **Nostalgic Vibes** with Perry-themed UI & music
-
-### 🎵 Musical Experience:
-- Unlock soundtracks like **"Loose My Mind"** and **"Tokyo Drift"**
-- Smooth fade-in/out transitions for immersive play
-
-### 🏆 Achievement Messages:
-- **10 Tsunamis:** _"Congratulations! Music player unlocked!"_
-- **20 Tsunamis:** _"GOD MODE ACTIVATED!"_ (Game pauses until retry)
-
-> *"We want players to feel like they're helping Perry save the world from tsunamis!"*
+When you visit DeepWave now, you can report unusual phenomena you experience — and view real-time reports submitted by others, all from your phone. Here's what we built:
 
 ---
 
-## 🔐 **FEATURE FRIDAY: USER AUTHENTICATION SYSTEM** — Secure Access, Perry Style!
+## 🛰️ **FEATURE FRIDAY: Real-Time Community Reporting System**
 
-Built with **Supabase**, our authentication system ensures only real agents can access the secrets of DeepWave.
+Let users on the ground directly report events like:
 
-### 🛡️ Security Features:
-- Email Registration with verification  
-- Secure Login for registered users only  
-- Custom Error Messages like _"Invalid login ID, please register first!"_  
-- Success Message: _"Congratulations, you are in!"_ (auto-closes)  
-- Glassmorphism design for clean modern UI
+- "I felt an earthquake."
+- "Water is pulling away from the beach!"
+- "Weird animal activity..."
+- 🖼️ Optional photo upload + live timestamp & location
 
-### 🎨 UI/UX Enhancements:
-- Perry-themed glass modal  
-- Jazz music during login  
-- Responsive and smooth animation  
-- Blurred background for focus
+All reports are visible live on the **main home page** — creating a crowdsourced warning system to supplement tech-based prediction.
 
-### 🔄 User Flow:
-1. **Register** → Confirm via email  
-2. **Login** → Only verified users allowed  
-3. **Success** → 2-second celebration + auto-close  
-4. **Errors** → Helpful, clear feedback
+### 🛡️ Safety & Trust:
+- Only **registered users** can submit reports
+- Reports are sanitized, rate-limited, and timestamped
+- Designed to help **early warning cross-validation** with live data
 
-> *"Security doesn’t have to be boring — Perry makes it fun!"*
+> *“We're making disaster awareness more participatory, human, and fast.”*
+
+---
+
+## 📱 **FEATURE FRIDAY: Fully Responsive Mobile Layout**
+
+Emergencies happen on-the-go — so we redesigned DeepWave to **work beautifully on mobile**.
+
+### 🔧 What We Improved:
+- 🔄 Fully responsive layout across all screen sizes
+- 🧭 Mobile-friendly Tour Mode & Game Mode
+- 🎮 Perry Tsunami Game now plays flawlessly with touch controls
+- 🖱️ Smooth navigation, improved spacing & font scaling
+
+### 🔍 Fixes We Faced:
+- 📸 Broken layouts on small devices — fixed with dynamic breakpoints
+- 🧩 Modal glitches solved with updated triggers
+- ⚠️ Mobile image uploads & live reporting UI now polished and fast
+
+> *"Whether you're reporting a disaster or just exploring our game — your phone can now do it all."*
+
+---
+
+### 📸 Screenshots from the New Feature!
+
+### 🛰️ Report Observations (Real-Time!)
+<img width="800" alt="Live Reporting" src="https://github.com/user-attachments/assets/example-reporting-ui.png" />
+
+### 📱 Mobile Friendly View
+<img width="800" alt="Mobile View" src="https://github.com/user-attachments/assets/example-mobile-ui.png" />
 
 ---
 
@@ -102,7 +86,7 @@ Take a **scroll-driven elevator journey** through the most devastating tsunamis 
 
 ---
 
-## ⚡️ **Beyond Gaming & Auth: Other Enhancements**
+## ⚡️ **Beyond Reporting & Mobile UX: Other Enhancements**
 
 DeepWave is more than just tools — it's an experience:
 
@@ -137,7 +121,9 @@ A tsunami prediction web app that combines:
 - 🌍 **Interactive 3D Earth** interface  
 - 🛸 **Tour Mode** with real historical events  
 - 🎮 **Perry Tsunami Game**  
-- 🔐 **User Authentication System**
+- 🔐 **User Authentication System**  
+- 🛰️ **Real-Time Human Reporting**  
+- 📱 **Fully Responsive Mobile UX**
 
 > **"Making geolocation data entry fun, intuitive, and secure — because sometimes, precision saves lives."**
 
