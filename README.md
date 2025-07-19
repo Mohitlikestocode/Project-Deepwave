@@ -8,7 +8,8 @@ by **Team Disaster Alertinator**
 ### 🌟 **FEATURE FRIDAY: Real-Time Community Reporting**  
 *(Test it out on your device — and try submitting a live report!)*
 
-<img width="1871" height="1320" alt="image" src="https://github.com/user-attachments/assets/48def8a8-1020-4583-ab95-0c0335ec0200" />
+<img width="1435" height="1330" alt="image" src="https://github.com/user-attachments/assets/9d8eeff9-ee6c-4062-8f21-ce6bdf282c29" />
+
 
 This Feature Friday is about bringing **people into the loop** — because your senses might detect the next big wave before the sensors do.
 
@@ -70,10 +71,12 @@ Emergencies happen on-the-go — so we redesigned DeepWave to **work beautifully
 ### 📸 Screenshots from the New Feature!
 
 ### 🛰️ Report Observations (Real-Time!)
-<img width="800" alt="Live Reporting" src="https://github.com/user-attachments/assets/example-reporting-ui.png" />
+<img width="1552" height="778" alt="image" src="https://github.com/user-attachments/assets/1339162b-7668-4fb1-89f2-1e9a1a97a058" />
 
-### 📱 Mobile Friendly View
-<img width="800" alt="Mobile View" src="https://github.com/user-attachments/assets/example-mobile-ui.png" />
+
+### 📱 Live Map feature
+<img width="633" height="1397" alt="image" src="https://github.com/user-attachments/assets/57206bff-fddd-49bc-8c69-f29c8603846a" />
+
 
 ---
 
