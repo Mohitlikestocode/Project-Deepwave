@@ -19,6 +19,8 @@ When you visit DeepWave now, you can report unusual phenomena you experience —
 
 ---
 
+**We've really given our best, collaboration on live reporting happens to one of the least touched areas when it comes to disaster management. Hence Disaster Alertinator came up with this very cool feature. this feautre has a lot of scope, we explored one important path of it - that is reporting live observations! Giving our users a platform to get awareness and contrinbute actively is our goal, which we hope to have achieved with this feature friday :)**
+
 ## 🛰️ **FEATURE FRIDAY: Real-Time Community Reporting System**
 
 Let users on the ground directly report events like:
