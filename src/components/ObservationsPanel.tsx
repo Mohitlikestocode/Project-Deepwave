@@ -143,8 +143,8 @@ export default function ObservationsPanel() {
             </div>
           </div>
           {/* Map on the right, using extra horizontal space */}
-          <div className="flex-1 flex flex-col min-w-[340px] max-w-[500px] xl:mt-0 mt-10">
-            <ObservationsMap />
+          <div className="flex-1 flex flex-col min-w-[340px] max-w-[500px] xl:mt-0 mt-10 h-[700px] xl:h-auto">
+            <ObservationsMap containerClassName="flex-1 h-full" />
           </div>
         </div>
       </div>
