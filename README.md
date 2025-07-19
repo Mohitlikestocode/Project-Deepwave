@@ -5,8 +5,8 @@ by **Team Disaster Alertinator**
 ---
 
 ## ✨ **Hey Judges! OUR LATEST FEATURE FRIDAY IS ALMOST LIVE!** 📱🛰️  
-### 🌟 **FEATURE FRIDAY: Real-Time Community Reporting + Fully Responsive Mobile Layout**  
-*(Test it out on your phone — and try submitting a live report!)*
+### 🌟 **FEATURE FRIDAY: Real-Time Community Reporting**  
+*(Test it out on your device — and try submitting a live report!)*
 
 <img width="1871" height="1320" alt="image" src="https://github.com/user-attachments/assets/48def8a8-1020-4583-ab95-0c0335ec0200" />
 
