@@ -8,6 +8,9 @@ by **Team Disaster Alertinator**
 ### 🌟 **FEATURE FRIDAY: Real-Time Community Reporting + Fully Responsive Mobile Layout**  
 *(Test it out on your phone — and try submitting a live report!)*
 
+<img width="1743" height="1249" alt="image" src="https://github.com/user-attachments/assets/69624cbe-0f60-4ba6-9932-14c964a0dab3" />
+
+
 This Feature Friday is about bringing **people into the loop** — because your senses might detect the next big wave before the sensors do.
 
 > **Machines predict. Humans feel. Together, we alert better.**
