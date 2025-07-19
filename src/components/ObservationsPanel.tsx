@@ -22,7 +22,10 @@ export default function ObservationsPanel() {
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
-      setUserName(data?.user?.user_metadata?.full_name || data?.user?.email || '');
+      // Only prefill if logged in, but allow editing
+      if (data?.user) {
+        setUserName(data?.user?.user_metadata?.full_name || data?.user?.email || '');
+      }
     });
   }, []);
 
@@ -30,17 +33,13 @@ export default function ObservationsPanel() {
     e.preventDefault();
     setError('');
     setSuccess('');
-    if (!userName) {
-      setError('You must be logged in to submit an observation.');
-      return;
-    }
     if (!place) {
       setError('Please fill all fields.');
       return;
     }
     setSubmitting(true);
     const obs: Observation = {
-      user_name: userName,
+      user_name: userName || 'Anonymous',
       type,
       place,
     };
@@ -85,7 +84,13 @@ export default function ObservationsPanel() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="flex flex-col gap-2">
                   <label className="font-bold text-cosmic-blue">Your Name</label>
-                  <input value={userName} disabled className="input bg-cosmic-black text-cosmic-silver border border-cosmic-blue/30 rounded px-3 py-2" />
+                  <input
+                    type="text"
+                    value={userName}
+                    onChange={e => setUserName(e.target.value)}
+                    placeholder="Enter your name (optional)"
+                    className="input bg-cosmic-black text-cosmic-silver border border-cosmic-blue/30 rounded px-3 py-2"
+                  />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="font-bold text-cosmic-blue">Type</label>
@@ -108,14 +113,14 @@ export default function ObservationsPanel() {
                 {/* Removed minutes ago input field */}
                 <button
                   type="submit"
-                  disabled={submitting || !userName}
+                  disabled={submitting}
                   className="w-full px-8 py-3 bg-cosmic-green hover:bg-cosmic-green-dark text-cosmic-black font-orbitron font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg mt-2"
                 >
                   {submitting ? 'Submitting...' : 'Submit Observation'}
                 </button>
                 {error && <div className="text-red-500 font-bold text-center animate-fadeIn">{error}</div>}
                 {success && <div className="text-green-400 font-bold text-center animate-fadeIn">{success}</div>}
-                {!userName && <div className="text-cosmic-silver text-center mt-2">You must be logged in to submit an observation.</div>}
+                {/* No login required message anymore */}
               </form>
             </div>
             {/* Recent Observations List */}
