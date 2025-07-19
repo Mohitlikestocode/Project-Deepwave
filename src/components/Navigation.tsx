@@ -158,12 +158,13 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick, onTourGameClick }
             {/* Tour & Game Mode Tab (restored to open modal) */}
             {onTourGameClick && (
               <button
-                className={`px-4 py-2 rounded-full font-space font-medium flex items-center gap-1 transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md hover:from-pink-500 hover:to-purple-500`}
-                aria-label="Tour & Game Mode"
+                className="ml-2 px-6 py-2 text-base font-orbitron flex items-center gap-2 rounded-full bg-pink-500 text-white shadow-lg border-2 border-pink-500 hover:bg-pink-600 hover:border-pink-600 transition-all duration-300"
+                aria-label="Choose mode"
                 onClick={onTourGameClick}
-                style={{ letterSpacing: "0.1em" }}
+                type="button"
               >
-                🎮 Tour & Game Mode
+                <span role="img" aria-label="Game Controller">🎮</span>
+                <span>Choose mode</span>
               </button>
             )}
             {/* Tour Mode & Game Mode Modal Button (optional, can be removed if not needed) */}
@@ -173,6 +174,19 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick, onTourGameClick }
               type="button"
             >
               Login
+            </button>
+            <button
+              className="ml-2 px-6 py-2 text-base font-orbitron flex items-center gap-2 rounded-full bg-blue-500 text-white shadow-lg border-2 border-blue-500 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300"
+              onClick={() => {
+                const obs = document.getElementById('observations');
+                if (obs) obs.scrollIntoView({ behavior: 'smooth' });
+              }}
+              type="button"
+              aria-label="Live Observations"
+              style={{minWidth: 'auto'}}
+            >
+              <img src="/components/perry.png" alt="Perry" className="w-5 h-5" style={{borderRadius: '50%'}} />
+              <span>Live Observations</span>
             </button>
           </div>
           <div className="md:hidden">

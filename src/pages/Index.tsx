@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import ObservationsPanel from "@/components/ObservationsPanel";
 import HeroSection from "@/components/HeroSection";
 import InteractiveGlobe from "@/components/InteractiveGlobe";
 import PredictionForm from "@/components/PredictionForm";
@@ -57,6 +58,27 @@ const Index = () => {
     <div className="min-h-screen relative">
       <audio ref={audioRef} src={jazzMp3} loop={false} />
       <CosmicStarfield />
+      <Navigation
+        onLoginClick={() => { setShowAuthModal(true); }}
+        onTourGameClick={() => setShowTourGameModal(true)}
+      />
+      {/* Perry CTA to Observations - now directly below Navigation and above HeroSection */}
+      <div className="w-full flex justify-center items-center gap-4 pt-8 pb-4 z-20 relative">
+        <img src="/components/perry.png" alt="Perry" className="w-16 h-16 bg-cosmic-black" style={{borderRadius: '50%'}} />
+        <div className="flex flex-col md:flex-row md:items-center gap-2">
+          <span className="font-orbitron text-cosmic-green text-lg md:text-2xl font-bold drop-shadow-lg">Perry says:</span>
+          <span className="font-space text-cosmic-silver text-base md:text-lg">People are reporting <span className='text-cosmic-green font-bold'>LIVE earthquake updates</span>, please check them out!</span>
+          <button
+            onClick={() => {
+              const obs = document.getElementById('observations');
+              if (obs) obs.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="ml-0 md:ml-4 px-6 py-2 bg-cosmic-green hover:bg-cosmic-green-dark text-cosmic-black font-orbitron font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-base md:text-lg"
+          >
+            Go to Observations
+          </button>
+        </div>
+      </div>
       <div className="space-grid min-h-screen">
         <Navigation
           onLoginClick={() => { setShowAuthModal(true); }}
@@ -135,6 +157,7 @@ const Index = () => {
           </button>
         </div>
         <section id="globe"><InteractiveGlobe /></section>
+        <section id="observations" data-aos="fade-up"><ObservationsPanel /></section>
         
         {/* Bridge to Prediction */}
         <section className="py-8 px-4 max-w-3xl mx-auto text-center relative">
