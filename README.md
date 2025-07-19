@@ -51,11 +51,8 @@ Let users on the ground directly report events like:
 
 ---
 
-## 📱 **FEATURE FRIDAY: Fully Responsive Mobile Layout**
 
-Emergencies happen on-the-go — so we redesigned DeepWave to **work beautifully on mobile**.
-
-### 🔧 What We Improved:
+## 🔧 What We Improved:
 - 🔄 Fully responsive layout across all screen sizes
 - 🧭 Mobile-friendly Tour Mode & Game Mode
 - 🎮 Perry Tsunami Game now plays flawlessly with touch controls
