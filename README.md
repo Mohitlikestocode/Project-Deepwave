@@ -8,8 +8,7 @@ by **Team Disaster Alertinator**
 ### 🌟 **FEATURE FRIDAY: Real-Time Community Reporting + Fully Responsive Mobile Layout**  
 *(Test it out on your phone — and try submitting a live report!)*
 
-<img width="1743" height="1249" alt="image" src="https://github.com/user-attachments/assets/69624cbe-0f60-4ba6-9932-14c964a0dab3" />
-
+<img width="1871" height="1320" alt="image" src="https://github.com/user-attachments/assets/48def8a8-1020-4583-ab95-0c0335ec0200" />
 
 This Feature Friday is about bringing **people into the loop** — because your senses might detect the next big wave before the sensors do.
 
@@ -28,7 +27,17 @@ Let users on the ground directly report events like:
 - "Weird animal activity..."
 - 🖼️ Optional photo upload + live timestamp & location
 
-All reports are visible live on the **main home page** — creating a crowdsourced warning system to supplement tech-based prediction.
+### 🗺️ Interactive Map Integration (Powered by React Leaflet):
+- Submitted reports are instantly mapped using **real geolocation**
+- Each report appears as a **clickable map pin**
+- Pins display the **type of observation**, **user message**, and **timestamp**
+- Map updates in **real time**, and is visible on the homepage
+- Highlights **community-generated early warning zones**
+
+### 🔘 Choose From 3 Event Types:
+- 🌍 Earthquake Felt  
+- 🌊 Unusual Water Movement  
+- 🐦 Animal Noise/Movement
 
 ### 🛡️ Safety & Trust:
 - Only **registered users** can submit reports
@@ -98,7 +107,8 @@ DeepWave is more than just tools — it's an experience:
 - Realistic NASA textures + bounce animation
 
 ### 🗺️ New 2D Map View:
-- Easier navigation for many users
+- Easier navigation for many users  
+- **Live pins from community reports now visible here too**
 
 ### 🤖 Automation:
 - Click "Generate Prediction" to scroll directly to prediction arena  
@@ -126,6 +136,7 @@ A tsunami prediction web app that combines:
 - 🎮 **Perry Tsunami Game**  
 - 🔐 **User Authentication System**  
 - 🛰️ **Real-Time Human Reporting**  
+- 🗺️ **Interactive Leaflet Map for Live Reports**  
 - 📱 **Fully Responsive Mobile UX**
 
 > **"Making geolocation data entry fun, intuitive, and secure — because sometimes, precision saves lives."**
