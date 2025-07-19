@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useObservations, submitObservation, Observation } from '../lib/observations';
 import { supabase } from '../lib/supabaseClient';
+import ObservationsMap from './ObservationsMap';
 
 const observationTypes = [
   'Earthquake',
@@ -62,9 +63,9 @@ export default function ObservationsPanel() {
         <p className="text-cosmic-silver font-space text-lg md:text-xl mb-8 text-center">
           Did you feel any unusual activity? <span className="text-cosmic-green font-bold">Report so the world can see!</span>
         </p>
-        <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-between items-stretch w-full">
-          {/* Left: Perry + Report Form */}
-          <div className="flex-1 flex flex-col gap-6 justify-between">
+        <div className="flex flex-col xl:flex-row gap-10 justify-between items-stretch w-full">
+          {/* Left: Perry + Report Form and Observations List */}
+          <div className="flex-[2] flex flex-col gap-6 min-w-[320px]">
             <div className="flex flex-col gap-2 mb-2">
               <div className="flex items-center gap-4 bg-cosmic-blue/20 border-2 border-cosmic-blue rounded-xl px-4 py-2 shadow-lg">
                 <img src="/components/perry.png" alt="Perry" className="w-16 h-16 rounded-full border-2 border-cosmic-blue shadow-lg bg-cosmic-black" />
@@ -117,29 +118,33 @@ export default function ObservationsPanel() {
                 {!userName && <div className="text-cosmic-silver text-center mt-2">You must be logged in to submit an observation.</div>}
               </form>
             </div>
+            {/* Recent Observations List */}
+            <div className="bg-cosmic-black border border-cosmic-blue/20 rounded-xl p-6 shadow-lg max-h-[520px] overflow-y-auto w-full">
+              <h3 className="text-xl font-orbitron font-bold text-cosmic-blue mb-4 text-center">Recent Observations</h3>
+              <ul className="space-y-4">
+                {observations.length === 0 && (
+                  <li className="text-cosmic-silver text-center">No observations yet. Be the first to report!</li>
+                )}
+                {observations.map(obs => (
+                  <li key={obs.id} className="bg-cosmic-black-light border border-cosmic-blue/20 rounded-lg px-4 py-3 shadow flex flex-col md:flex-row md:items-center md:gap-4 animate-fadeIn">
+                    <span className="font-bold text-cosmic-green">{obs.user_name}</span>
+                    <span className="text-cosmic-silver">experienced</span>
+                    <span className="font-bold text-cosmic-blue">{obs.type}</span>
+                    <span className="text-cosmic-silver">at</span>
+                    <span className="font-bold text-cosmic-green">{obs.place}</span>
+                    <span className="text-cosmic-silver">{
+                      obs.created_at
+                        ? `${Math.floor((Date.now() - new Date(obs.created_at).getTime()) / 60000)} min ago`
+                        : ''
+                    }</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          {/* Right: Recent Observations (even wider) */}
-          <div className="flex-[5] bg-cosmic-black border border-cosmic-blue/20 rounded-xl p-6 shadow-lg max-h-[520px] overflow-y-auto min-w-[720px] w-full">
-            <h3 className="text-xl font-orbitron font-bold text-cosmic-blue mb-4 text-center">Recent Observations</h3>
-            <ul className="space-y-4">
-              {observations.length === 0 && (
-                <li className="text-cosmic-silver text-center">No observations yet. Be the first to report!</li>
-              )}
-              {observations.map(obs => (
-                <li key={obs.id} className="bg-cosmic-black-light border border-cosmic-blue/20 rounded-lg px-4 py-3 shadow flex flex-col md:flex-row md:items-center md:gap-4 animate-fadeIn">
-                  <span className="font-bold text-cosmic-green">{obs.user_name}</span>
-                  <span className="text-cosmic-silver">experienced</span>
-                  <span className="font-bold text-cosmic-blue">{obs.type}</span>
-                  <span className="text-cosmic-silver">at</span>
-                  <span className="font-bold text-cosmic-green">{obs.place}</span>
-                  <span className="text-cosmic-silver">{
-                    obs.created_at
-                      ? `${Math.floor((Date.now() - new Date(obs.created_at).getTime()) / 60000)} min ago`
-                      : ''
-                  }</span>
-                </li>
-              ))}
-            </ul>
+          {/* Map on the right, using extra horizontal space */}
+          <div className="flex-1 flex flex-col min-w-[340px] max-w-[500px] xl:mt-0 mt-10">
+            <ObservationsMap />
           </div>
         </div>
       </div>
