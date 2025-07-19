@@ -1,4 +1,18 @@
 import React, { useState, useEffect } from 'react';
+
+
+// Helper to format time ago (same as in ObservationsMap)
+function timeAgo(dateString?: string): string {
+  if (!dateString) return '';
+  const now = Date.now();
+  const diffMs = now - new Date(dateString).getTime();
+  const diffMins = Math.floor(diffMs / 60000);
+  if (diffMins < 60) return `${diffMins} minute${diffMins === 1 ? '' : 's'} ago`;
+  const diffHours = Math.floor(diffMins / 60);
+  if (diffHours < 24) return `${diffHours} hour${diffHours === 1 ? '' : 's'} ago`;
+  const diffDays = Math.floor(diffHours / 24);
+  return `${diffDays} day${diffDays === 1 ? '' : 's'} ago`;
+}
 import { useObservations, submitObservation, Observation } from '../lib/observations';
 import { supabase } from '../lib/supabaseClient';
 import ObservationsMap from './ObservationsMap';
@@ -126,22 +140,18 @@ export default function ObservationsPanel() {
             {/* Recent Observations List */}
             <div className="bg-cosmic-black border border-cosmic-blue/20 rounded-xl p-6 shadow-lg max-h-[520px] overflow-y-auto w-full">
               <h3 className="text-xl font-orbitron font-bold text-cosmic-blue mb-4 text-center">Recent Observations</h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 max-h-[300px] overflow-y-auto pr-2">
                 {observations.length === 0 && (
                   <li className="text-cosmic-silver text-center">No observations yet. Be the first to report!</li>
                 )}
-                {observations.map(obs => (
+                {observations.map((obs, idx) => (
                   <li key={obs.id} className="bg-cosmic-black-light border border-cosmic-blue/20 rounded-lg px-4 py-3 shadow flex flex-col md:flex-row md:items-center md:gap-4 animate-fadeIn">
                     <span className="font-bold text-cosmic-green">{obs.user_name}</span>
                     <span className="text-cosmic-silver">experienced</span>
                     <span className="font-bold text-cosmic-blue">{obs.type}</span>
                     <span className="text-cosmic-silver">at</span>
                     <span className="font-bold text-cosmic-green">{obs.place}</span>
-                    <span className="text-cosmic-silver">{
-                      obs.created_at
-                        ? `${Math.floor((Date.now() - new Date(obs.created_at).getTime()) / 60000)} min ago`
-                        : ''
-                    }</span>
+                    <span className="text-cosmic-silver">{obs.created_at ? timeAgo(obs.created_at) : ''}</span>
                   </li>
                 ))}
               </ul>
